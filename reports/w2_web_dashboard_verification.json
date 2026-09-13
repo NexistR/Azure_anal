@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "rows": 7043,
+  "charts": 15,
+  "offline_plotly": true,
+  "filters": [
+    "Contract",
+    "InternetService",
+    "PaymentMethod",
+    "tenure_band",
+    "fee_level"
+  ],
+  "missing_dimensions": [
+    "region",
+    "industry",
+    "subscription_type"
+  ],
+  "source": "data/raw/telco_customer_churn/WA_Fn-UseC_-Telco-Customer-Churn.csv",
+  "browser_checks": {
+    "browser": "Microsoft Edge headless",
+    "remote_debugging_port": 9224,
+    "page_title": "W2 交互式流失分析预览（Plotly）",
+    "panels_rendered": 15,
+    "plotly_graphs_rendered": 15,
+    "default_kpis": {
+      "customers": 7043,
+      "churned": 1869
+    },
+    "contract_month_to_month_kpis": {
+      "customers": 3875,
+      "churned": 1655
+    },
+    "combined_filter_empty_state": "block",
+    "screenshots": [
+      "screenshots/w2_web_default.png",
+      "screenshots/w2_web_combined_filter.png"
+    ],
+    "post_fix_recheck": {
+      "specs_length": 15,
+      "panels_rendered": 15,
+      "plotly_graphs_rendered": 15,
+      "default_kpis": "7043|1869",
+      "month_to_month_kpis": "3875|1655",
+      "combined_filter_empty_state": "block",
+      "overview_uses_churn_key": true
+    },
+    "post_h5_fix": {
+      "default_fee_service_population": {"internet_users": 5517, "churned": 1756},
+      "x": ["0-2 add-ons", "3-6 add-ons"],
+      "y": ["Low fee", "High fee"],
+      "rates_by_y_x": [[0.33460076045627374, 0.11504424778761062], [0.533042846768337, 0.23474615742897065]],
+      "source_table": "reports/tables/w2_fee_service_rates.csv",
+      "reconciled": true
+    },
+    "result": "passed"
+  }
+}

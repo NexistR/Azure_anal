@@ -1,0 +1,27 @@
+﻿path,sha256,kind,review_date,notes
+azure-churn-clv/configs/README.md,7163a019a9a1580021ee1d352473b218c05f302ecf2e4aa5d6cbbf00ee85cda0,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/dashboard/README.md,38ad4b7b73cd3f751f6446ed91458c858df4c14c54c68b10f43d85e0f622d0f6,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/data/processed/README.md,0b51adf2fa098cb0bff660d40b18bc033407a5760260fdca002e8f9c899254de,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/data/raw/README.md,be49a19f283b6178fc98944e7ea9925449eda9993766b8b339f77003dad3b876,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/data/README.md,8764df0276abe2c12d691248a9a5f58e51aeba37b1e00346e6360831abd00114,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/docs/project/Azure客户流失预测与CLV提升_项目介绍.md,a0c41900d57b326dc720784df4d415b66c804fc3b3087741c8e64e6dd709b7ec,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/docs/project/微软数据分析实习项目：微软 Azure 云服务客户流失预测与全生命周期价值提升分析(1).pdf,1ef695912c3c6a2a3fd1fb25fb6adb735770f30fd07cb97279f7dcc41fe4baea,PDF,2026-09-09,5 pages extracted and read
+azure-churn-clv/docs/README.md,ef51bbe96f5a7a63cb9d6ecb4d2f0b178468a62245d3dc0c80edaab890a478a8,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/models/README.md,8acde6c83c0ce433075e3cee16a5728c6ad78149a0a2d82569f3c90aa83b23ea,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/notebooks/README.md,7fafae2998c6d73af75d3ee8d92dd86a1b13d6eba0e41cecb2fa88d687e25ab2,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/README.md,52d5742bc1a4e0cfcffdc69a8aa691a069ee35d2a642a52808d2362b69741d9f,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/data_contract_v1.md,1b82b45375c035acc687dc13f648f1f03b859cf2fdf52edc1143ab78a74380d0,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/data_dictionary_v1.csv,107e3da71f53848b5e049e91e002d1c5100042113498a053361da29d32a123a2,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/data_quality_report_v1.md,fa1a4da92755e812e9c9244b999fcc6f234864df4d78b376e53533fc666d4a11,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/figures/README.md,eac2dd8178a13c0da495410b32628a5ec3c0667ce99f672f7812eb32f4ca3714,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/hypothesis_matrix_v1.csv,5f058067f1d960a1c401cd62ca5f74cbd1aa11004eb11879f78e2c24682265bc,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/hypothesis_matrix_v1.md,9c4e4a4cf6e0b72ac51c2783eef962a6d4680f0b2f2a729b99cac94fd7712cda,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/README.md,92d7f10063cfff33dd30497e6efd97695a0d1a3464f1ff030f5610d547012a32,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/scope_v1.md,70c0a308dde156fff6823ccf169f135e020b02f9fdf0ccab5c01d6f647aa5292,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/tables/data_manifest.csv,be208f6d785ef1a614da1cf56e282089c0f62596b912f946a9a79ebd2d67e196,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/tables/README.md,4c5d6abf407c31783a41a20e432de4b3387231546aed8d2a0f73b122493cf52e,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/reports/w2_input_checklist.md,5b7c28fb923c0c39c1f824677f85fb7004e35c4f0b666f6d7fcf58270785a90c,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+azure-churn-clv/tests/README.md,232b9928fac9afc015ae8cd64984ab248fcf703876c1f507188179ade6f4746b,README,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+交付报告/W2准备工作总结_2026-09-08.md,a5d11683c28e1d00d5f55f7b02f8a506877bddd693a60f80636f268aef03dc58,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+交付报告/W2启动清单与立即行动.md,c470ba630e56b384650539eaf06505d1717bc34b04e8a14497df1154e423c2f4,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded
+交付报告/W2工作框架与推进计划.md,3757c9d555736132ce497b42c3672794eb1b29253b7243c95a5392b273778351,Project / W1 / W2 source,2026-09-09,Reviewed for W2 execution; dependency/cache README files excluded

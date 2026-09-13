@@ -1,0 +1,38 @@
+dimension,check,status,value,severity
+Structure,File readable,PASS,"7043 rows, 21 columns",N/A
+Uniqueness,customerID uniqueness,PASS,"7043 unique IDs, 0 nulls, 0 duplicates",N/A
+Completeness,customerID missing,PASS,0 (0.00%),P2
+Completeness,gender missing,PASS,0 (0.00%),P2
+Completeness,SeniorCitizen missing,PASS,0 (0.00%),P2
+Completeness,Partner missing,PASS,0 (0.00%),P2
+Completeness,Dependents missing,PASS,0 (0.00%),P2
+Completeness,tenure missing,PASS,0 (0.00%),P2
+Completeness,PhoneService missing,PASS,0 (0.00%),P2
+Completeness,MultipleLines missing,PASS,0 (0.00%),P2
+Completeness,InternetService missing,PASS,0 (0.00%),P2
+Completeness,OnlineSecurity missing,PASS,0 (0.00%),P2
+Completeness,OnlineBackup missing,PASS,0 (0.00%),P2
+Completeness,DeviceProtection missing,PASS,0 (0.00%),P2
+Completeness,TechSupport missing,PASS,0 (0.00%),P2
+Completeness,StreamingTV missing,PASS,0 (0.00%),P2
+Completeness,StreamingMovies missing,PASS,0 (0.00%),P2
+Completeness,Contract missing,PASS,0 (0.00%),P2
+Completeness,PaperlessBilling missing,PASS,0 (0.00%),P2
+Completeness,PaymentMethod missing,PASS,0 (0.00%),P2
+Completeness,MonthlyCharges missing,PASS,0 (0.00%),P2
+Completeness,TotalCharges missing,PASS,0 (0.00%),P2
+Completeness,Churn missing,PASS,0 (0.00%),P2
+Type,TotalCharges type,WARN,"object (expected numeric), 11 blank strings",P1
+Range,tenure range,PASS,"0 - 72 months, 0 negative",N/A
+Range,MonthlyCharges range,PASS,"18.25 - 118.75, 0 negative, 0 zero",N/A
+Category,gender valid values,PASS,"2 unique, unexpected: none",N/A
+Category,SeniorCitizen valid values,PASS,"2 unique, unexpected: none",N/A
+Category,Partner valid values,PASS,"2 unique, unexpected: none",N/A
+Category,Dependents valid values,PASS,"2 unique, unexpected: none",N/A
+Category,PhoneService valid values,PASS,"2 unique, unexpected: none",N/A
+Category,Contract valid values,PASS,"3 unique, unexpected: none",N/A
+Category,PaperlessBilling valid values,PASS,"2 unique, unexpected: none",N/A
+Category,Churn valid values,PASS,"2 unique, unexpected: none",N/A
+Consistency,TotalCharges vs tenure logic,DEFER,Deferred to W3 cleaning pipeline,N/A
+Label,Churn distribution,PASS,"Yes: 1869 (26.54%), No: 5174 (73.46%)",N/A
+Label,Class imbalance,WARN,Minority class: 26.54%,Note for W5

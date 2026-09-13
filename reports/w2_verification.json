@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-13T06:55:58.150895+00:00",
+  "fresh_kernel_runs": 2,
+  "code_cells_executed": 24,
+  "all_code_cells_successful": true,
+  "csv_png_hashes_identical": true,
+  "reproduced_files": 51,
+  "all_six_raw_files_match_w1_manifest": true,
+  "seed": 42,
+  "checks": {
+    "figures": 20,
+    "analyzed_hypotheses": 7,
+    "hypotheses_registered": 10,
+    "figure_dpi": 300,
+    "rate_tables_consistent": true,
+    "primary_partitions_reconcile": true
+  }
+}

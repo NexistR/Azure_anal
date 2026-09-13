@@ -1,0 +1,27 @@
+[
+  {
+    "file": "C:\\Users\\若无\\AppData\\Local\\Package Cache\\{1B1A3A1E-3CCF-4A0E-A544-0B94E8E51156}v3.12.9150.0\\core.msi",
+    "size": 2043904,
+    "sha256": "09e1941d6309cc62e165cc81f6ed57f5b681733d8b54e9fe1b2b91a31e17126c"
+  },
+  {
+    "file": "C:\\Users\\若无\\AppData\\Local\\Package Cache\\{8F708501-AF68-42E7-8A6E-D239CA6DA1A8}v3.12.9150.0\\exe.msi",
+    "size": 753664,
+    "sha256": "fbae8d94c9a0e296f60655f058f48cd162880af3d48b72a8b275eea631ec54ed"
+  },
+  {
+    "file": "C:\\Users\\若无\\AppData\\Local\\Package Cache\\{312BF73C-2417-4636-A1C8-2DE2EAE1AD68}v3.12.9150.0\\lib.msi",
+    "size": 7442432,
+    "sha256": "502207b7042c78c3885882a72336ad7203f2354ed0328bd56c43b565503091b8"
+  },
+  {
+    "file": "azure-churn-clv\\.runtime\\python312\\python.exe",
+    "size": 105832,
+    "sha256": "805fd29612c221ebea570d372ec5ed46093c25a1033f1765de9b2f8103868886"
+  },
+  {
+    "file": "azure-churn-clv\\.runtime\\python312\\python312.dll",
+    "size": 6920936,
+    "sha256": "b6227a506a9963e7c8182785a54e14a193af51f7b277a61dda04492b499f49ad"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "overview",
+  "displayName": "01 总览：合同与客户期限",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1600
+}

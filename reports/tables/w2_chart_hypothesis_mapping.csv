@@ -1,0 +1,21 @@
+﻿chart_id,hypothesis_id,category,title,conclusion,action,path,evidence,limitations
+01,基础,分布,流失标签分布,"流失1,869/7,043（26.54%）。",后续评估保留类别占比基线。,reports/figures/w2_eda/01_churn_distribution.png,reports/tables/w2_churn_distribution.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+02,H2,分布,客户年限分布,tenure<6客户占19.47%；0月客户11名。,新客分层使用明确的左闭右开月数区间。,reports/figures/w2_eda/02_tenure_distribution.png,reports/tables/w2_tenure_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+03,"H10,H5",分布,月费分布,月费中位数70.35，范围18.25–118.75。,以中位数划分价值代理，货币单位不作额外推断。,reports/figures/w2_eda/03_monthly_charges_distribution.png,reports/tables/w2_numeric_summary.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+04,H1,分布,Contract客户构成,"最多类别为Month-to-month，共3,875名。",结合各组样本量解读后续流失率差异。,reports/figures/w2_eda/04_contract_distribution.png,reports/tables/w2_contract_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+05,H6,分布,PaymentMethod客户构成,"最多类别为Electronic check，共2,365名。",结合各组样本量解读后续流失率差异。,reports/figures/w2_eda/05_paymentmethod_distribution.png,reports/tables/w2_payment_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+06,H4,分布,六项互联网增值服务采用率,无互联网客户不具备采用六项增值服务的条件，分母会影响采用率。,服务采用报告同时标明全体与互联网客户分母。,reports/figures/w2_eda/06_service_adoption.png,reports/tables/w2_service_adoption.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+07,H1,关联,合同类型与流失率,Month-to-month 42.71%；One year 11.27%；Two year 2.83%。,将月付客户列为进一步访谈候选，年付转换效果尚需验证。,reports/figures/w2_eda/07_h1_contract_churn.png,reports/tables/w2_contract_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+08,H2,关联,客户年限与流失率,"[0,6)月组54.27%，[48,73)月组9.64%。",优先研究上手体验；横截面不能解释为同一批客户的时间趋势。,reports/figures/w2_eda/08_h2_tenure_churn.png,reports/tables/w2_tenure_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+09,H4,关联,增值服务数与流失率,全体0服务组混合无互联网客户；互联网客户内少服务与较高流失相关。,W3保留无互联网状态；W4再将服务计数正式工程化。,reports/figures/w2_eda/09_h4_service_count_churn.png,reports/tables/w2_service_count_internet.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+10,H4,关联,各增值服务与流失率（互联网客户）,服务之间关联强度不同，安全与技术支持需重点进一步核查。,六项比较使用Bonferroni校正，不能把采用关联解读为加购效果。,reports/figures/w2_eda/10_h4_individual_services.png,reports/tables/w2_individual_service_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+11,H10,关联,月费四分位与流失率,月费组间流失率有差异，具体走势见分位表，不能假设严格单调。,价值优先级同时参考风险规则和费用，暂不计算CLV。,reports/figures/w2_eda/11_h10_fee_quartiles.png,reports/tables/w2_fee_quartile_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+12,H5,关联,月费与服务数（互联网客户）,高月费0–2服务组流失53.30%，3–6服务组23.47%。,核查套餐与服务适配；价格感知和实际使用深度缺字段，尚不可验证。,reports/figures/w2_eda/12_h5_fee_service_scatter.png,reports/tables/w2_fee_service_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+13,H6,关联,支付方式与流失率,Electronic check组流失率较高，手动支付组内部也有差异。,支付方式不等于支付失败或自动续费；先核查合同构成。,reports/figures/w2_eda/13_h6_payment_churn.png,reports/tables/w2_payment_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+14,H9,关联,人口统计细分与流失率,并非所有人口字段都存在显著差异；性别与其他细分分别检验。,仅用于公平性与细分稳定性核查，不替代缺失的地区或行业字段。,reports/figures/w2_eda/14_h9_demographics.png,reports/tables/w2_demographic_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+15,"H1,H2",交叉,合同×年限交叉流失率,月付与短年限组合呈较高观察流失；小样本格标*，不据此作稳定排序。,W4记录交互候选；未做正式交互显著性检验。,reports/figures/w2_eda/15_contract_tenure_heatmap.png,reports/tables/w2_contract_tenure_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+16,"H2,H4,H10",交叉,数值变量Spearman相关矩阵,矩阵含Churn仅作标签关联说明；服务数与费用也存在关联。,W4排除Churn及其派生字段；本图不构成完整共线性诊断。,reports/figures/w2_eda/16_spearman_correlation.png,reports/tables/w2_spearman_matrix.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+17,H10,交叉,风险规则×月费价值代理矩阵,风险规则为月付且tenure<6，高价值为月费≥全体中位数；格内为已观察流失率。,仅展示分层雏形；W7完成验证后的风险评分才可支持后续排序。,reports/figures/w2_eda/17_risk_value_prototype.png,reports/tables/w2_risk_value_prototype.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+18,H4,交叉,互联网类型内的服务数对比,0服务客户在不同互联网类型中基线不同；分层后再判断服务数量方向。,保留InternetService类别并对分层结果做敏感性核查。,reports/figures/w2_eda/18_internet_service_stratification.png,reports/tables/w2_service_count_by_internet.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+19,"H6,H1",交叉,合同×支付方式交叉流失率,支付方式差异需要结合合同类型解读，各格样本量并不相同。,将支付方式候选解释与合同构成共同复核。,reports/figures/w2_eda/19_contract_payment_heatmap.png,reports/tables/w2_contract_payment_rates.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。
+20,H4,交叉,互联网客户常见增值服务组合,按样本量列出前十种组合，组合间差异是探索结果，未做独立确认检验。,用组合分布支持需求访谈，不根据本图推荐强制加购。,reports/figures/w2_eda/20_service_combinations.png,reports/tables/w2_service_combinations.csv,Telco公开代理数据；横截面关联；无事件日期；月费为价值代理，非CLV。

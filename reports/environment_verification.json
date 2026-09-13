@@ -1,0 +1,39 @@
+{
+  "verified_at_utc": "2026-09-13T07:01:37.579738+00:00",
+  "python_version": "3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]",
+  "python_executable": "G:\\VScode\\pj_mic\\azure-churn-clv\\.venv\\Scripts\\python.exe",
+  "base_prefix": "G:\\VScode\\pj_mic\\azure-churn-clv\\.runtime\\python312",
+  "kernel": "azure-w2",
+  "fresh_kernel": {
+    "status": "w2_kernel_ok",
+    "python": "G:\\VScode\\pj_mic\\azure-churn-clv\\.venv\\Scripts\\python.exe"
+  },
+  "checks": [
+    "scientific_imports",
+    "pandas_mean",
+    "scipy_normal_cdf",
+    "matplotlib_agg_render",
+    "fresh_jupyter_kernel",
+    "kernel_interpreter_matches",
+    "matplotlib_inline_png"
+  ],
+  "compatibility_adapter": "scripts/launch_kernel.py restores the IPython backend2gui alias for Matplotlib < 3.9",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "matplotlib": "3.8.4",
+    "seaborn": "0.13.2",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.1",
+    "ipykernel": "6.29.5",
+    "jupyter-client": "8.10.0",
+    "jupyter-core": "5.9.1",
+    "pyzmq": "27.2.0",
+    "traitlets": "5.16.1",
+    "openpyxl": "3.1.5",
+    "ipython": "9.17.0",
+    "matplotlib-inline": "0.2.2"
+  }
+}

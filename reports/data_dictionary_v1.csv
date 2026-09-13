@@ -1,0 +1,22 @@
+field_name,chinese_name,data_type,unit,allowed_values,missing_rule,business_available_time,leakage_risk,hypothesis_mapping,notes
+customerID,客户ID,string,N/A,唯一字符串标识符,无缺失,预测时可用,无,N/A,唯一主键；不作为特征；仅用于索引和结果关联
+gender,性别,string,N/A,"Male, Female",无缺失,预测时可用,低,H9,人口统计特征；可能影响产品偏好和价格敏感度
+SeniorCitizen,老年客户标志,integer,N/A,"0 (非老年), 1 (老年)",无缺失,预测时可用,低,H9,0=非老年客户 1=老年客户；老年客户可能有不同的服务需求和流失驱动因素
+Partner,有配偶/伴侣,string,N/A,"Yes, No",无缺失,预测时可用,低,H9,是否有配偶或伴侣；可能影响家庭套餐需求和账户稳定性
+Dependents,有受抚养人,string,N/A,"Yes, No",无缺失,预测时可用,低,H9,是否有受抚养人（如子女）；可能影响服务需求和账户稳定性
+tenure,客户年限,integer,月,0-72,无缺失,预测时可用,低,H2,客户已订阅的总月数；0表示新客户；是唯一的时间相关字段但无法构建趋势特征
+PhoneService,电话服务,string,N/A,"Yes, No",无缺失,预测时可用,低,H4,是否订阅电话服务
+MultipleLines,多线路,string,N/A,"Yes, No, No phone service",无缺失,预测时可用,低,H4,是否有多条电话线；无电话服务时为No phone service
+InternetService,互联网服务类型,string,N/A,"DSL, Fiber optic, No",无缺失,预测时可用,低,H4,互联网服务类型；DSL=数字用户线路 Fiber optic=光纤 No=无互联网服务
+OnlineSecurity,在线安全服务,string,N/A,"Yes, No, No internet service",无缺失,预测时可用,低,H4,是否订阅在线安全服务（增值服务）；无互联网时为No internet service
+OnlineBackup,在线备份服务,string,N/A,"Yes, No, No internet service",无缺失,预测时可用,低,H4,是否订阅在线备份服务（增值服务）；无互联网时为No internet service
+DeviceProtection,设备保护服务,string,N/A,"Yes, No, No internet service",无缺失,预测时可用,低,H4,是否订阅设备保护服务（增值服务）；无互联网时为No internet service
+TechSupport,技术支持服务,string,N/A,"Yes, No, No internet service",无缺失,预测时可用,低,H4,是否订阅技术支持服务（增值服务）；无互联网时为No internet service
+StreamingTV,流媒体TV服务,string,N/A,"Yes, No, No internet service",无缺失,预测时可用,低,H4,是否订阅流媒体电视服务；无互联网时为No internet service
+StreamingMovies,流媒体电影服务,string,N/A,"Yes, No, No internet service",无缺失,预测时可用,低,H4,是否订阅流媒体电影服务；无互联网时为No internet service
+Contract,合同类型,string,N/A,"Month-to-month, One year, Two year",无缺失,预测时可用,低,H1,合同期限类型；Month-to-month=月付无合约 One year=一年合约 Two year=两年合约
+PaperlessBilling,无纸化账单,string,N/A,"Yes, No",无缺失,预测时可用,低,H6,是否使用无纸化电子账单；可能与支付方式和自动化程度相关
+PaymentMethod,支付方式,string,N/A,"Electronic check, Mailed check, Bank transfer (automatic), Credit card (automatic)",无缺失,预测时可用,低,H6,支付方式；automatic后缀表示自动支付；手动支付可能增加忘记续费风险
+MonthlyCharges,月度费用,float,美元（推测）,18.25-118.75,无缺失,预测时可用,低,"H5, H10",客户当前的月度订阅费用；反映服务组合和价格层级；W8用作价值代理但不等于毛利或CLV
+TotalCharges,累计费用,string→float,美元（推测）,需转换为数值,11行为空格字符串,预测时可用（清洗后）,低,H10,客户历史累计支付总额；原始为字符串类型需清洗；理论上约等于tenure×MonthlyCharges需验证；W8可用作历史价值代理
+Churn,流失标签,string→binary,N/A,"Yes (流失), No (未流失)",无缺失,❌ 禁止作为特征,**高 - 目标变量**,所有假设,目标变量；Yes=已流失(1) No=未流失(0)；流失率26.54%；任何由此派生的字段禁止进入特征

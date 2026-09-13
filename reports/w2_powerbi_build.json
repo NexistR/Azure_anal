@@ -1,0 +1,233 @@
+{
+  "seed": 42,
+  "source": "data/raw/telco_customer_churn/WA_Fn-UseC_-Telco-Customer-Churn.csv",
+  "source_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "rows": 7043,
+  "columns": 21,
+  "churned": 1869,
+  "churn_rate": 0.2653698707936959,
+  "internet_users": 5517,
+  "six_services": [
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies"
+  ],
+  "tenure_bins": [
+    0,
+    6,
+    12,
+    24,
+    48,
+    73
+  ],
+  "tenure_intervals": "Left closed, right open",
+  "fee_quartile_edges": [
+    18.25,
+    35.5,
+    70.35,
+    89.85,
+    118.75
+  ],
+  "high_fee_threshold": 70.35,
+  "low_service_threshold": 2,
+  "risk_rule": "Contract == Month-to-month AND tenure < 6; no predicted probability",
+  "raw_unchanged": true,
+  "python": "3.12.9",
+  "packages": {
+    "pandas": "2.2.3",
+    "numpy": "1.26.4",
+    "matplotlib": "3.8.4",
+    "seaborn": "0.13.2",
+    "scipy": "1.13.1",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.1",
+    "ipykernel": "6.29.5"
+  },
+  "dimension_status": {
+    "region": "source_missing",
+    "industry": "source_missing",
+    "subscription_type": "Contract proxy only"
+  },
+  "built_at_utc": "2026-09-13T07:33:54.213267+00:00",
+  "format": "Native Power BI Project (PBIP / PBIR / TMSL)",
+  "pages": [
+    "overview",
+    "services",
+    "profiles",
+    "intersections"
+  ],
+  "analytical_visual_count": 21,
+  "analytical_visuals": [
+    {
+      "page": "overview",
+      "visual": "chart_0",
+      "field": "Contract",
+      "measure": "Observed churn rate",
+      "title": "H1｜各合同类型的观察流失率",
+      "population": "current filter context"
+    },
+    {
+      "page": "overview",
+      "visual": "chart_1",
+      "field": "tenure_band",
+      "measure": "Observed churn rate",
+      "title": "H2｜各客户期限组的观察流失率",
+      "population": "current filter context"
+    },
+    {
+      "page": "overview",
+      "visual": "chart_2",
+      "field": "InternetService",
+      "measure": "Observed churn rate",
+      "title": "网络服务类型与观察流失率",
+      "population": "current filter context"
+    },
+    {
+      "page": "overview",
+      "visual": "chart_3",
+      "field": "fee_quartile",
+      "measure": "Observed churn rate",
+      "title": "H10｜月费四分位与观察流失率",
+      "population": "current filter context"
+    },
+    {
+      "page": "services",
+      "visual": "service_count",
+      "field": "service_count",
+      "measure": "Internet churn rate",
+      "title": "H4 | 六项增值服务数量与观察流失率",
+      "population": "internet customers"
+    },
+    {
+      "page": "services",
+      "visual": "service_0",
+      "field": "OnlineSecurity",
+      "measure": "Internet churn rate",
+      "title": "H4 | 网络安全",
+      "population": "internet customers"
+    },
+    {
+      "page": "services",
+      "visual": "service_1",
+      "field": "OnlineBackup",
+      "measure": "Internet churn rate",
+      "title": "H4 | 在线备份",
+      "population": "internet customers"
+    },
+    {
+      "page": "services",
+      "visual": "service_2",
+      "field": "DeviceProtection",
+      "measure": "Internet churn rate",
+      "title": "H4 | 设备保护",
+      "population": "internet customers"
+    },
+    {
+      "page": "services",
+      "visual": "service_3",
+      "field": "TechSupport",
+      "measure": "Internet churn rate",
+      "title": "H4 | 技术支持",
+      "population": "internet customers"
+    },
+    {
+      "page": "services",
+      "visual": "service_4",
+      "field": "StreamingTV",
+      "measure": "Internet churn rate",
+      "title": "H4 | 电视服务",
+      "population": "internet customers"
+    },
+    {
+      "page": "services",
+      "visual": "service_5",
+      "field": "StreamingMovies",
+      "measure": "Internet churn rate",
+      "title": "H4 | 电影服务",
+      "population": "internet customers"
+    },
+    {
+      "page": "profiles",
+      "visual": "profile_0",
+      "field": "PaymentMethod",
+      "measure": "Observed churn rate",
+      "title": "H6｜付款方式",
+      "population": "current filter context"
+    },
+    {
+      "page": "profiles",
+      "visual": "profile_1",
+      "field": "manual_payment",
+      "measure": "Observed churn rate",
+      "title": "H6｜手动与自动付款",
+      "population": "current filter context"
+    },
+    {
+      "page": "profiles",
+      "visual": "profile_2",
+      "field": "gender",
+      "measure": "Observed churn rate",
+      "title": "H9｜性别",
+      "population": "current filter context"
+    },
+    {
+      "page": "profiles",
+      "visual": "profile_3",
+      "field": "SeniorCitizen",
+      "measure": "Observed churn rate",
+      "title": "H9｜老年客户",
+      "population": "current filter context"
+    },
+    {
+      "page": "profiles",
+      "visual": "profile_4",
+      "field": "Partner",
+      "measure": "Observed churn rate",
+      "title": "H9｜是否有伴侣",
+      "population": "current filter context"
+    },
+    {
+      "page": "profiles",
+      "visual": "profile_5",
+      "field": "Dependents",
+      "measure": "Observed churn rate",
+      "title": "H9｜是否有受抚养人",
+      "population": "current filter context"
+    },
+    {
+      "page": "intersections",
+      "visual": "matrix_0",
+      "field": "Contract x tenure_band",
+      "measure": "Observed churn rate",
+      "title": "合同 × 客户期限：观察流失率"
+    },
+    {
+      "page": "intersections",
+      "visual": "matrix_1",
+      "field": "risk_rule x fee_level",
+      "measure": "Observed churn rate",
+      "title": "H10｜规则 × 月费（仅描述性）"
+    },
+    {
+      "page": "intersections",
+      "visual": "matrix_2",
+      "field": "Contract x PaymentMethod",
+      "measure": "Observed churn rate",
+      "title": "合同 × 付款方式：观察流失率"
+    },
+    {
+      "page": "intersections",
+      "visual": "fee_services",
+      "field": "service_level",
+      "measure": "Internet churn rate",
+      "title": "H5 | 服务广度与观察流失率",
+      "population": "internet customers"
+    }
+  ],
+  "requires_cloud_login": false,
+  "native_desktop_verified": false
+}

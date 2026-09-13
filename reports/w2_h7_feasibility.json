@@ -1,0 +1,27 @@
+{
+  "telco_key": "customerID",
+  "ticket_columns": [
+    "Ticket ID",
+    "Customer Name",
+    "Customer Email",
+    "Customer Age",
+    "Customer Gender",
+    "Product Purchased",
+    "Date of Purchase",
+    "Ticket Type",
+    "Ticket Subject",
+    "Ticket Description",
+    "Ticket Status",
+    "Resolution",
+    "Ticket Priority",
+    "Ticket Channel",
+    "First Response Time",
+    "Time to Resolution",
+    "Customer Satisfaction Rating"
+  ],
+  "exact_common_columns": [],
+  "verified_customer_key": false,
+  "intersection_count": null,
+  "coverage": null,
+  "decision": "不可验证：工单表无Telco customerID及可靠映射，Telco无快照时间；未合并。"
+}

@@ -1,0 +1,13 @@
+﻿check,value,interpretation
+rows,7043,W1 baseline 7043
+columns,21,W1 baseline 21
+duplicate_customer_id,0,Must be zero
+duplicate_rows,0,Must be zero
+explicit_null_cells,0,Does not detect whitespace strings
+total_charges_whitespace,11,Read-only audit; not converted or analyzed
+tenure_zero,11,Retained in W2
+blank_charges_and_zero_tenure,11,No automatic imputation decision
+no_internet_customers,1526,Structural ineligibility is not missingness
+addon_logic_conflicts,0,Across six service fields
+phone_logic_conflicts,0,No phone service consistency
+monthly_charge_iqr_outliers,0,Statistical rule only; not a cleaning decision

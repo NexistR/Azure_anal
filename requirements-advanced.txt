@@ -1,0 +1,14 @@
+# Advanced models, tuning, explainability, causal inference, and CLV.
+# DoWhy 0.13 supports Python 3.12 without forcing the NumPy 2-only stack.
+xgboost==2.1.4
+lightgbm==4.5.0
+catboost==1.2.8
+optuna==3.6.1
+shap==0.46.0
+lime==0.2.0.1
+statsmodels==0.14.4
+dowhy==0.13
+lifetimes==0.11.3
+autograd>=1.6,<2
+# Lifetimes' bundled dataset loader still imports pkg_resources.
+setuptools==81.0.0

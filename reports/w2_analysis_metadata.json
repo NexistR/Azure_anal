@@ -1,0 +1,50 @@
+{
+  "seed": 42,
+  "source": "azure-churn-clv/data/raw/telco_customer_churn/WA_Fn-UseC_-Telco-Customer-Churn.csv",
+  "source_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "rows": 7043,
+  "columns": 21,
+  "churned": 1869,
+  "churn_rate": 0.2653698707936959,
+  "internet_users": 5517,
+  "six_services": [
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies"
+  ],
+  "tenure_bins": [
+    0,
+    6,
+    12,
+    24,
+    48,
+    73
+  ],
+  "tenure_intervals": "Left closed, right open",
+  "fee_quartile_edges": [
+    18.25,
+    35.5,
+    70.35,
+    89.85,
+    118.75
+  ],
+  "high_fee_threshold": 70.35,
+  "low_service_threshold": 2,
+  "risk_rule": "Contract == Month-to-month AND tenure < 6; no predicted probability",
+  "raw_unchanged": true,
+  "python": "3.12.9",
+  "packages": {
+    "pandas": "2.2.3",
+    "numpy": "1.26.4",
+    "matplotlib": "3.8.4",
+    "seaborn": "0.13.2",
+    "scipy": "1.13.1",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.1",
+    "ipykernel": "6.29.5"
+  }
+}

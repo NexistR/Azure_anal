@@ -1,0 +1,563 @@
+{
+  "project": "W2_Churn",
+  "validator": "jsonschema Draft7Validator",
+  "total_files": 79,
+  "passed_files": 79,
+  "failed_files": 0,
+  "status": "passed",
+  "checks": [
+    {
+      "kind": "pbip",
+      "path": "dashboard/powerbi/W2_Churn.pbip",
+      "schema": "pbip_1.0.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "report_definition",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition.pbir",
+      "schema": "report_definitionProperties_2.0.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "report_root",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/report.json",
+      "schema": "report_report_2.0.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "report_version",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/version.json",
+      "schema": "report_versionMetadata_1.0.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "report_pages",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/pages.json",
+      "schema": "report_pagesMetadata_1.0.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "semantic_definition",
+      "path": "dashboard/powerbi/W2_Churn.SemanticModel/definition.pbism",
+      "schema": "semantic_definitionProperties_1.0.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "page",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/page.json",
+      "schema": "report_page_2.0.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "page",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/page.json",
+      "schema": "report_page_2.0.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "page",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/page.json",
+      "schema": "report_page_2.0.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "page",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/page.json",
+      "schema": "report_page_2.0.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/fee_services/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/header/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/kpi_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/kpi_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/kpi_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/kpi_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/limitations/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/matrix_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/matrix_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/matrix_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/slicer_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/slicer_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/slicer_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/slicer_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/slicer_4/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/intersections/visuals/subtitle/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/chart_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/chart_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/chart_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/chart_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/header/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/kpi_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/kpi_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/kpi_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/kpi_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/limitations/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/slicer_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/slicer_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/slicer_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/slicer_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/slicer_4/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/overview/visuals/subtitle/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/header/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/kpi_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/kpi_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/kpi_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/kpi_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/limitations/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/profile_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/profile_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/profile_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/profile_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/profile_4/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/profile_5/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/slicer_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/slicer_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/slicer_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/slicer_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/slicer_4/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/profiles/visuals/subtitle/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/header/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/kpi_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/kpi_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/kpi_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/kpi_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/limitations/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/service_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/service_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/service_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/service_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/service_4/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/service_5/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/service_count/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/slicer_0/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/slicer_1/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/slicer_2/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/slicer_3/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/slicer_4/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "visual",
+      "path": "dashboard/powerbi/W2_Churn.Report/definition/pages/services/visuals/subtitle/visual.json",
+      "schema": "report_visualContainer_2.9.0.json",
+      "status": "passed",
+      "errors": []
+    }
+  ]
+}

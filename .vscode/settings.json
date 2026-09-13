@@ -1,0 +1,12 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.envFile": "${workspaceFolder}\\.env",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "terminal.integrated.env.windows": {
+    "JAVA_HOME": "${workspaceFolder}\\.tools\\jdk-17",
+    "PYSPARK_PYTHON": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+    "PYSPARK_DRIVER_PYTHON": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+  }
+}

@@ -1,0 +1,17 @@
+# Reproducible core stack for Python 3.12 on Windows x64.
+# These versions satisfy the PDF baselines and remain compatible with DoWhy 0.13.
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.13.1
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.22.0
+scikit-learn==1.5.2
+imbalanced-learn==0.12.4
+jupyterlab==4.2.5
+notebook==7.2.2
+ipykernel==6.29.5
+ipywidgets==8.1.5
+joblib==1.4.2
+sqlalchemy==2.0.36
+openpyxl==3.1.5

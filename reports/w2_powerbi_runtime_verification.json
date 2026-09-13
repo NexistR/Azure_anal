@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "verified_at": "2026-09-13T07:46:30.469256+00:00",
+  "powerbi_process_id": 36124,
+  "analysis_services_process_id": 39184,
+  "port": 51475,
+  "model": "fdba9315-e70a-4e1b-83c8-9fff3d75e9a9",
+  "query": "EVALUATE ROW(\"Rows\", COUNTROWS('Customers'), \"Churned\", [Churned customers], \"Rate\", [Observed churn rate])",
+  "rows": 7043,
+  "churned_customers": 1869,
+  "observed_churn_rate": 0.265369870793696,
+  "refresh_state": "XMLA full refresh succeeded; four report pages rendered with populated visuals",
+  "notes": "Power BI Desktop PBIP W2_Churn loaded successfully; four pages rendered and DAX/XMLA queries match the Python snapshot. On-disk model includes Internet average monthly charge and tenure_band_order.",
+  "latest_desktop_check": {
+    "process_id": 36124,
+    "analysis_services_port": 51475,
+    "pages_rendered": 4,
+    "screenshots": [
+      "screenshots/w2_powerbi_overview.png",
+      "screenshots/w2_powerbi_services.png",
+      "screenshots/w2_powerbi_profiles.png",
+      "screenshots/w2_powerbi_intersections.png"
+    ],
+    "default_kpis": "7043|1869|26.54%",
+    "services_kpis": "5517|1756|31.83%",
+    "contract_month_to_month": "3875|1655|42.71%",
+    "result": "passed"
+  },
+  "contract_month_to_month": {
+    "rows": 3875,
+    "churned_customers": 1655,
+    "observed_churn_rate": 0.427096774193548
+  },
+  "screenshots": [
+    "screenshots/w2_powerbi_overview.png",
+    "screenshots/w2_powerbi_services.png",
+    "screenshots/w2_powerbi_profiles.png",
+    "screenshots/w2_powerbi_intersections.png"
+  ],
+  "pages": 4
+}

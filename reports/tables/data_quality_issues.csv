@@ -1,0 +1,2 @@
+dimension,field,rule,count,pct,sample,severity,impact,recommendation,needs_business_confirm
+Type,TotalCharges,Should be numeric,11,0.16%,"Blank string "" """,P1,Cannot use as numeric feature,"Convert blank to NaN, then to float; investigate why blank",No

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-13T07:40:20.389005+00:00",
+  "model_sha256": "459eabac226b52027138391687d305fa40041b24daca696db1accf66de18802b",
+  "snapshot_rows": 7043,
+  "snapshot_columns": 29,
+  "measures": 10,
+  "original_fields_match_source_row_by_row": true,
+  "column_names_unique_case_insensitive": true,
+  "customer_identifiers_and_total_charges_excluded": true,
+  "tenure_band_sort_matches_month_order": true,
+  "customers": 7043,
+  "churned": 1869,
+  "internet_customers": 5517,
+  "internet_churned": 1756,
+  "internet_average_monthly_charge": 76.84425412361792
+}
