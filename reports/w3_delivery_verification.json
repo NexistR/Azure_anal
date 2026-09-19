@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-16T09:18:18.982876+00:00",
+  "manifest": "reports/w3_artifact_manifest.csv",
+  "manifest_sha256": "72fa5f9e6ccb695d98fe8d03ce38b570b41ffb97211ab69cd945a4978d999b7e",
+  "artifact_files": 58,
+  "source_reading_entries": 20,
+  "project_readmes": 13,
+  "required_week2_sources_unchanged": true,
+  "raw_source_files_unchanged": 6,
+  "current_business_hashes_verified": 17,
+  "code_and_test_evidence_matches_current_files": true,
+  "local_markdown_links_checked": 221,
+  "broken_links": [],
+  "notebook_executed_code_cells": 5,
+  "temporal_feature_designs": 12,
+  "temporal_features_computed": 0,
+  "private_artifacts_ignored_by_git": 11,
+  "week3_sub_documents": 3,
+  "tests": {
+    "run": 52,
+    "passed": 51,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0
+  },
+  "limitations": [
+    "Canonical table retains 11 unknown TotalCharges",
+    "Windows file symlink test skipped due to privilege 1314; directory junction and hardlink tests executed",
+    "Temporal computation requires actual event/history data"
+  ],
+  "manifest_excludes": [
+    "reports/w3_artifact_manifest.csv",
+    "reports/w3_delivery_verification.json"
+  ],
+  "purpose": "Delivery snapshot integrity; timestamps/HTML/model bytes can change on a subsequent legitimate run"
+}

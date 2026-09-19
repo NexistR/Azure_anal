@@ -1,0 +1,46 @@
+﻿field,category,before,after
+gender,Female,3488,3488
+gender,Male,3555,3555
+SeniorCitizen,0,5901,5901
+SeniorCitizen,1,1142,1142
+Partner,No,3641,3641
+Partner,Yes,3402,3402
+Dependents,No,4933,4933
+Dependents,Yes,2110,2110
+PhoneService,No,682,682
+PhoneService,Yes,6361,6361
+MultipleLines,No,3390,3390
+MultipleLines,Yes,2971,2971
+MultipleLines,No phone service,682,682
+InternetService,DSL,2421,2421
+InternetService,Fiber optic,3096,3096
+InternetService,No,1526,1526
+OnlineSecurity,No,3498,3498
+OnlineSecurity,Yes,2019,2019
+OnlineSecurity,No internet service,1526,1526
+OnlineBackup,No,3088,3088
+OnlineBackup,Yes,2429,2429
+OnlineBackup,No internet service,1526,1526
+DeviceProtection,No,3095,3095
+DeviceProtection,Yes,2422,2422
+DeviceProtection,No internet service,1526,1526
+TechSupport,No,3473,3473
+TechSupport,Yes,2044,2044
+TechSupport,No internet service,1526,1526
+StreamingTV,No,2810,2810
+StreamingTV,Yes,2707,2707
+StreamingTV,No internet service,1526,1526
+StreamingMovies,No,2785,2785
+StreamingMovies,Yes,2732,2732
+StreamingMovies,No internet service,1526,1526
+Contract,Month-to-month,3875,3875
+Contract,One year,1473,1473
+Contract,Two year,1695,1695
+PaperlessBilling,No,2872,2872
+PaperlessBilling,Yes,4171,4171
+PaymentMethod,Bank transfer (automatic),1544,1544
+PaymentMethod,Credit card (automatic),1522,1522
+PaymentMethod,Electronic check,2365,2365
+PaymentMethod,Mailed check,1612,1612
+Churn,No,5174,5174
+Churn,Yes,1869,1869

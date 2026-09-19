@@ -1,0 +1,286 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-09-16T09:05:48.576985+00:00",
+  "rule_version": "w3-telco-cleaning-v1.0.0",
+  "seed": 42,
+  "test_size": 0.2,
+  "source": "data/raw/telco_customer_churn/WA_Fn-UseC_-Telco-Customer-Churn.csv",
+  "source_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "raw_files_unchanged": 6,
+  "rows": 7043,
+  "columns": 25,
+  "unique_customer_ids": 7043,
+  "churned": 1869,
+  "nonchurned": 5174,
+  "total_charges_missing": 11,
+  "internet_customers": 5517,
+  "tenure_zero": 11,
+  "input_feature_columns": 22,
+  "encoded_columns": 49,
+  "train_rows": 5634,
+  "validation_rows": 1409,
+  "matrix_nonfinite_values": 0,
+  "quality_rules": 46,
+  "quality_rules_failed": 0,
+  "train_only_statistics_verified": true,
+  "id_label_excluded": true,
+  "idempotent": true,
+  "input_dataframe_unchanged": true,
+  "serialized_transform_identical": true,
+  "output_dir": "data/processed/w3",
+  "model_dir": "models/w3",
+  "reports_dir": "reports",
+  "code_sha256": {
+    "src/data/clean.py": "f350aabd372480bf83d226bbcd3b827a49501f5ce8e476a0f6a04a0561a9d8c3",
+    "src/data/preprocess.py": "2ef8c5265f4a6db0527829154afdeb74a1e35bc70aaf1e81c469d0cd7604ac6a",
+    "src/data/w3_workflow.py": "9ddc1679b21f45587f567ac4bdf3df6df1f922ebc4e6190ca50ef3aba18fddd9",
+    "scripts/run_week3.py": "7a8ab58b387c86ccf064011d51e445e3b9ad5d3acf026155ea86891d44b4688e"
+  },
+  "resolved_config": {
+    "version": "w3-telco-cleaning-v1.0.0",
+    "seed": 42,
+    "test_size": 0.2,
+    "input_path": "data/raw/telco_customer_churn/WA_Fn-UseC_-Telco-Customer-Churn.csv",
+    "output_dir": "data/processed/w3",
+    "model_dir": "models/w3",
+    "expected_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+    "raw_columns": [
+      "customerID",
+      "gender",
+      "SeniorCitizen",
+      "Partner",
+      "Dependents",
+      "tenure",
+      "PhoneService",
+      "MultipleLines",
+      "InternetService",
+      "OnlineSecurity",
+      "OnlineBackup",
+      "DeviceProtection",
+      "TechSupport",
+      "StreamingTV",
+      "StreamingMovies",
+      "Contract",
+      "PaperlessBilling",
+      "PaymentMethod",
+      "MonthlyCharges",
+      "TotalCharges",
+      "Churn"
+    ],
+    "derived_columns": [
+      "churn_label",
+      "total_charges_missing",
+      "tenure_zero",
+      "internet_applicable"
+    ],
+    "categories": {
+      "gender": [
+        "Female",
+        "Male"
+      ],
+      "SeniorCitizen": [
+        0,
+        1
+      ],
+      "Partner": [
+        "No",
+        "Yes"
+      ],
+      "Dependents": [
+        "No",
+        "Yes"
+      ],
+      "PhoneService": [
+        "No",
+        "Yes"
+      ],
+      "MultipleLines": [
+        "No",
+        "Yes",
+        "No phone service"
+      ],
+      "InternetService": [
+        "DSL",
+        "Fiber optic",
+        "No"
+      ],
+      "OnlineSecurity": [
+        "No",
+        "Yes",
+        "No internet service"
+      ],
+      "OnlineBackup": [
+        "No",
+        "Yes",
+        "No internet service"
+      ],
+      "DeviceProtection": [
+        "No",
+        "Yes",
+        "No internet service"
+      ],
+      "TechSupport": [
+        "No",
+        "Yes",
+        "No internet service"
+      ],
+      "StreamingTV": [
+        "No",
+        "Yes",
+        "No internet service"
+      ],
+      "StreamingMovies": [
+        "No",
+        "Yes",
+        "No internet service"
+      ],
+      "Contract": [
+        "Month-to-month",
+        "One year",
+        "Two year"
+      ],
+      "PaperlessBilling": [
+        "No",
+        "Yes"
+      ],
+      "PaymentMethod": [
+        "Bank transfer (automatic)",
+        "Credit card (automatic)",
+        "Electronic check",
+        "Mailed check"
+      ],
+      "Churn": [
+        "No",
+        "Yes"
+      ]
+    },
+    "numeric_rules": {
+      "SeniorCitizen": {
+        "integer": true,
+        "minimum": 0,
+        "minimum_inclusive": true,
+        "maximum": 1
+      },
+      "tenure": {
+        "integer": true,
+        "minimum": 0,
+        "minimum_inclusive": true,
+        "maximum": null
+      },
+      "MonthlyCharges": {
+        "integer": false,
+        "minimum": 0,
+        "minimum_inclusive": false,
+        "maximum": null
+      },
+      "TotalCharges": {
+        "integer": false,
+        "minimum": 0,
+        "minimum_inclusive": true,
+        "maximum": null
+      }
+    },
+    "allowed_nulls": [
+      "TotalCharges"
+    ],
+    "label_mapping": {
+      "No": 0,
+      "Yes": 1
+    },
+    "internet_service_columns": [
+      "OnlineSecurity",
+      "OnlineBackup",
+      "DeviceProtection",
+      "TechSupport",
+      "StreamingTV",
+      "StreamingMovies"
+    ],
+    "structural_categories": {
+      "no_internet": "No",
+      "internet_not_applicable": "No internet service",
+      "no_phone": "No",
+      "phone_not_applicable": "No phone service"
+    },
+    "features": {
+      "numeric": [
+        "tenure",
+        "MonthlyCharges",
+        "TotalCharges"
+      ],
+      "categorical": [
+        "gender",
+        "SeniorCitizen",
+        "Partner",
+        "Dependents",
+        "PhoneService",
+        "MultipleLines",
+        "InternetService",
+        "OnlineSecurity",
+        "OnlineBackup",
+        "DeviceProtection",
+        "TechSupport",
+        "StreamingTV",
+        "StreamingMovies",
+        "Contract",
+        "PaperlessBilling",
+        "PaymentMethod"
+      ],
+      "binary": [
+        "total_charges_missing",
+        "tenure_zero",
+        "internet_applicable"
+      ]
+    },
+    "preprocessing": {
+      "numeric_imputation": "training_median",
+      "all_missing_training_column_fallback": 0.0,
+      "keep_empty_features": true,
+      "numeric_scaling": "training_standard_scaler",
+      "unknown_category_policy": "error"
+    },
+    "semantics": {
+      "source": "Telco public teaching proxy, not Azure internal customer data",
+      "observation": "static snapshot; no verifiable observation or event dates",
+      "missing_total_charges": "unknown; retained as NA with a flag in the cleaned table",
+      "all_missing_training_column": "SimpleImputer keeps an entirely missing training column and uses computational zero; this is not a known monetary amount",
+      "split": "stratified random interface demonstration, not a final temporal modeling split",
+      "outlier_policy": "diagnose only; no deletion, winsorization, or sample-maximum business limits",
+      "feature_scope": "preprocessing interface demonstration; not W4 final feature selection"
+    }
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.5.2",
+    "joblib": "1.4.2"
+  },
+  "business_hashes": {
+    "data/ids_train.csv": "0274838001f6b36e541661a7597317ce161dffaab3090a23bfa46afec6b6e1ec",
+    "data/ids_validation.csv": "31f3cebb5da78162c0105cdc999cbd9b854a749285a7273e61257fce0872dd2e",
+    "data/missing_total_charges_audit.csv": "cfdd822e31afd4ea6c8f90014ddfbe02ae9df81ae555ccb87d8d693ef53c086c",
+    "data/split_membership.csv": "cfdc9f917c15f9e3ba92438a3db7903c41f10dfbf9396e947b32666bc3d5c28c",
+    "data/telco_clean.csv": "4e116fd797d8588306764a7cef2871ed76ce4619aa02f5c6aa6731a5309c9fd3",
+    "data/X_train.csv": "8f0a72d40833433c3bdf2567aea57962593d94c65b4be37a1270bda4c1f44615",
+    "data/X_validation.csv": "0406fd7a5ebf0a4ab959d5df911eadb7b7ae6c4eda106b52cf79019bc9b7cf18",
+    "data/y_train.csv": "09d1597ba671bf0d3ab16d5a395186130c40c766d94386b0f8f1a536c011004a",
+    "data/y_validation.csv": "04166dbe9f025c9e7a1597954cb547c65ddc1911a530baf388e95389cc08e655",
+    "tables/w3_before_after.csv": "6af11b92e2a3aa91aaee6458e1966fdf3983142f9dfd0eb8b6b275337fcc4b2f",
+    "tables/w3_category_reconciliation.csv": "00546230e00050b758bc1d55f310e2b4dd2fec303d254427446632ff3976d16e",
+    "tables/w3_charge_difference_summary.csv": "d9093e4628f3f0b144d00cec7f241bde8e10f51f2014a06607e54dcf3f577673",
+    "tables/w3_feature_dictionary.csv": "47aa186dc8edb5c99f72993c0a3921836e78dc0bfa934e9176b40b42b608eeb4",
+    "tables/w3_field_audit.csv": "7aa9c45e85556a5f73c60144c7a8449a1be3d35ff7c489cc921d88a0643ced10",
+    "tables/w3_preprocessor_parameters.csv": "726a3baa95feadbd5464bc65f1278f6d01715dd978aa40638c3f9f9c3c213c5e",
+    "tables/w3_quality_checks.csv": "14349af8050a220c9d79ca3f5cd17904b85c383b7209054dc1f71d2396385362",
+    "tables/w3_split_summary.csv": "cc2b57a730bba7e8e5c5236022d7e65950c649a0414fd4dda6bbdd8c4150fc02"
+  },
+  "limits": {
+    "canonical_data_without_missing": false,
+    "canonical_missing_values": "11 unknown TotalCharges retained; no claimed true zero",
+    "temporal_features_computed": 0,
+    "temporal_features_design": "See feature_engineering_design_v1.md; source has no event dates",
+    "model_evaluation_performed": false,
+    "structural_absence_is_not_missing": true
+  },
+  "config_file_sha256": "d5d5d373de8a94a74a2c08aea25c6f6e04ef3ee174618aaf8c3d9fe46b3b230c"
+}

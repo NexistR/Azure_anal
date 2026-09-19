@@ -1,0 +1,67 @@
+{
+  "version": "w3-telco-cleaning-v1.0.0",
+  "seed": 42,
+  "test_size": 0.2,
+  "input_path": "data/raw/telco_customer_churn/WA_Fn-UseC_-Telco-Customer-Churn.csv",
+  "output_dir": "data/processed/w3",
+  "model_dir": "models/w3",
+  "expected_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "raw_columns": [
+    "customerID", "gender", "SeniorCitizen", "Partner", "Dependents", "tenure",
+    "PhoneService", "MultipleLines", "InternetService", "OnlineSecurity",
+    "OnlineBackup", "DeviceProtection", "TechSupport", "StreamingTV",
+    "StreamingMovies", "Contract", "PaperlessBilling", "PaymentMethod",
+    "MonthlyCharges", "TotalCharges", "Churn"
+  ],
+  "derived_columns": ["churn_label", "total_charges_missing", "tenure_zero", "internet_applicable"],
+  "categories": {
+    "gender": ["Female", "Male"],
+    "SeniorCitizen": [0, 1],
+    "Partner": ["No", "Yes"],
+    "Dependents": ["No", "Yes"],
+    "PhoneService": ["No", "Yes"],
+    "MultipleLines": ["No", "Yes", "No phone service"],
+    "InternetService": ["DSL", "Fiber optic", "No"],
+    "OnlineSecurity": ["No", "Yes", "No internet service"],
+    "OnlineBackup": ["No", "Yes", "No internet service"],
+    "DeviceProtection": ["No", "Yes", "No internet service"],
+    "TechSupport": ["No", "Yes", "No internet service"],
+    "StreamingTV": ["No", "Yes", "No internet service"],
+    "StreamingMovies": ["No", "Yes", "No internet service"],
+    "Contract": ["Month-to-month", "One year", "Two year"],
+    "PaperlessBilling": ["No", "Yes"],
+    "PaymentMethod": ["Bank transfer (automatic)", "Credit card (automatic)", "Electronic check", "Mailed check"],
+    "Churn": ["No", "Yes"]
+  },
+  "numeric_rules": {
+    "SeniorCitizen": {"integer": true, "minimum": 0, "minimum_inclusive": true, "maximum": 1},
+    "tenure": {"integer": true, "minimum": 0, "minimum_inclusive": true, "maximum": null},
+    "MonthlyCharges": {"integer": false, "minimum": 0, "minimum_inclusive": false, "maximum": null},
+    "TotalCharges": {"integer": false, "minimum": 0, "minimum_inclusive": true, "maximum": null}
+  },
+  "allowed_nulls": ["TotalCharges"],
+  "label_mapping": {"No": 0, "Yes": 1},
+  "internet_service_columns": ["OnlineSecurity", "OnlineBackup", "DeviceProtection", "TechSupport", "StreamingTV", "StreamingMovies"],
+  "structural_categories": {"no_internet": "No", "internet_not_applicable": "No internet service", "no_phone": "No", "phone_not_applicable": "No phone service"},
+  "features": {
+    "numeric": ["tenure", "MonthlyCharges", "TotalCharges"],
+    "categorical": ["gender", "SeniorCitizen", "Partner", "Dependents", "PhoneService", "MultipleLines", "InternetService", "OnlineSecurity", "OnlineBackup", "DeviceProtection", "TechSupport", "StreamingTV", "StreamingMovies", "Contract", "PaperlessBilling", "PaymentMethod"],
+    "binary": ["total_charges_missing", "tenure_zero", "internet_applicable"]
+  },
+  "preprocessing": {
+    "numeric_imputation": "training_median",
+    "all_missing_training_column_fallback": 0.0,
+    "keep_empty_features": true,
+    "numeric_scaling": "training_standard_scaler",
+    "unknown_category_policy": "error"
+  },
+  "semantics": {
+    "source": "Telco public teaching proxy, not Azure internal customer data",
+    "observation": "static snapshot; no verifiable observation or event dates",
+    "missing_total_charges": "unknown; retained as NA with a flag in the cleaned table",
+    "all_missing_training_column": "SimpleImputer keeps an entirely missing training column and uses computational zero; this is not a known monetary amount",
+    "split": "stratified random interface demonstration, not a final temporal modeling split",
+    "outlier_policy": "diagnose only; no deletion, winsorization, or sample-maximum business limits",
+    "feature_scope": "preprocessing interface demonstration; not W4 final feature selection"
+  }
+}

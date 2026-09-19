@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "rows": 7043,
+  "columns": 25,
+  "total_charges_missing": 11,
+  "encoded_columns": 49,
+  "quality_rules": 46,
+  "quality_rules_failed": 0,
+  "train_only_statistics_verified": true,
+  "id_label_excluded": true,
+  "idempotent": true,
+  "raw_files_unchanged": 6,
+  "serialized_transform_identical": true,
+  "verified_at_utc": "2026-09-16T09:06:25.983671+00:00",
+  "reproducibility": {
+    "requested": true,
+    "status": "passed",
+    "fresh_process_runs": 2,
+    "non_project_working_directory": true,
+    "files_compared": 17,
+    "business_hashes_identical": true
+  },
+  "notebook": {
+    "status": "passed",
+    "fresh_kernel": true,
+    "code_cells_executed": 5,
+    "notebook": "notebooks/03_cleaning.ipynb"
+  },
+  "source_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "limitations": {
+    "canonical_data_without_missing": false,
+    "canonical_missing_values": "11 unknown TotalCharges retained; no claimed true zero",
+    "temporal_features_computed": 0,
+    "temporal_features_design": "See feature_engineering_design_v1.md; source has no event dates",
+    "model_evaluation_performed": false,
+    "structural_absence_is_not_missing": true
+  }
+}

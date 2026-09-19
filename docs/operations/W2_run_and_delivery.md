@@ -1,6 +1,6 @@
 # W2 运行与交付说明
 
-更新时间：2026-09-13。所有 W2 可执行文件、Notebook、数据、图表和分析报告已整合到 `azure-churn-clv/`。相邻 `week2_sub/` 保存完成报告及用户随后要求的两份零基础说明。
+更新时间：2026-09-13；GitHub 路径整理：2026-09-19。所有 W2 可执行文件、Notebook、图表和分析报告已整合到仓库根目录。`docs/deliverables/week2/` 保存完成报告、实验报告 PDF 及两份零基础说明；原始数据需另行准备。
 
 ## 直接查看交付物
 
@@ -13,7 +13,7 @@
 | 图表及证据 | [20 张 PNG](../../reports/figures/w2_eda/)；[图表映射 CSV](../../reports/tables/w2_chart_hypothesis_mapping.csv) |
 | 假设与统计检验 | [十项假设 CSV](../../reports/tables/w2_hypothesis_results.csv)；[统计检验 CSV](../../reports/tables/w2_statistical_tests.csv) |
 | 下一周怎么做 | [10 条 W3 清洗建议](../../reports/w2_to_w3_cleaning_recommendations.md) |
-| 要求是否满足 | [逐项验收审计](../../reports/w2_requirements_audit.md)；[完成报告](../../../week2_sub/W2完成报告_2026-09-09.md) |
+| 要求是否满足 | [逐项验收审计](../../reports/w2_requirements_audit.md)；[完成报告](../deliverables/week2/W2完成报告_2026-09-09.md) |
 
 ## Power BI 怎么进入
 

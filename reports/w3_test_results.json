@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "executed_at_utc": "2026-09-16T09:13:07.411988+00:00",
+  "python": "3.12.9",
+  "command": "python scripts/test_week3.py",
+  "test_pattern": "tests/test_w3*.py",
+  "tests_run": 52,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 1,
+  "expected_failures": 0,
+  "unexpected_successes": 0,
+  "duration_seconds": 6.109,
+  "log": "reports/w3_test_results.log",
+  "log_sha256": "39955549d3b911fd88b6f10f7dcf1be87b84fff28ba467276f386d76ff3fa7fd",
+  "source_sha256": {
+    "tests/test_w3_cleaning.py": "13584ceb9fc745dae933d0ae6a43b33fcdbdfea39c69335d1e7204deef2296f7",
+    "tests/test_w3_workflow.py": "0b8d87873ab8ecd2b3d8bd67a192e9356f5b5b844d56a60dad0e23e703654571",
+    "scripts/test_week3.py": "eef119dba946728c38fd2d9c737bd92f551e679774448433e546589857ab05fc",
+    "src/data/clean.py": "f350aabd372480bf83d226bbcd3b827a49501f5ce8e476a0f6a04a0561a9d8c3",
+    "src/data/preprocess.py": "2ef8c5265f4a6db0527829154afdeb74a1e35bc70aaf1e81c469d0cd7604ac6a",
+    "src/data/w3_workflow.py": "9ddc1679b21f45587f567ac4bdf3df6df1f922ebc4e6190ca50ef3aba18fddd9",
+    "scripts/run_week3.py": "7a8ab58b387c86ccf064011d51e445e3b9ad5d3acf026155ea86891d44b4688e"
+  }
+}

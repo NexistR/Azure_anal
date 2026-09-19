@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "errors": [],
+  "checks": {
+    "python": 24,
+    "json_and_powerbi": 103,
+    "notebooks": 3,
+    "markdown_local_links": 347,
+    "manifest_sha256_entries_verified": 276,
+    "git_ignore_exclusion_probes_passed": 11,
+    "unintentionally_ignored_upload_files": 0,
+    "known_secret_pattern_matches": 0
+  },
+  "source_and_baseline_unchanged": true,
+  "non_markdown_source_artifacts_byte_identical": true,
+  "offline_demo_snapshots": {
+    "powerbi_rows": 7043,
+    "html_rows": 7043,
+    "customer_identifiers_name_email_columns": false
+  },
+  "files": 278,
+  "largest_file": {
+    "path": "notebooks/02_eda.html",
+    "bytes": 6929013
+  },
+  "prepared_on": "2026-09-19",
+  "baseline_head": "34837ab40b093622bca49058e810a104f0bc5c5c",
+  "diff": {
+    "added": 48,
+    "modified": 13,
+    "deleted": 0
+  },
+  "scope": "Packaging verification only; historical W2/W3 tests and workflows were not rerun.",
+  "manifest_exclusions": [
+    "reports/github_upload_manifest_2026-09-19.csv",
+    "reports/github_upload_verification_2026-09-19.json"
+  ],
+  "historical_evidence": "Existing reports/manifests/PDFs preserve original run dates, paths and hashes; use the new upload manifest to check this portable copy.",
+  "total_bytes_excluding_this_verification": 38681632
+}

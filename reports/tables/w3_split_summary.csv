@@ -1,0 +1,3 @@
+﻿split,rows,churned,churn_rate,missing_total_charges,matrix_columns,nonfinite_values
+train,5634,1495,0.265353212638,8,49,0
+validation,1409,374,0.265436479773,3,49,0

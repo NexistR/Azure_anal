@@ -1,0 +1,421 @@
+{
+  "status": "passed",
+  "verification_started_at_utc": "2026-09-16T09:11:07.365800+00:00",
+  "verified_at_utc": "2026-09-16T09:11:22.701086+00:00",
+  "scope": "New isolated venv: core workflow and all W3 unittest tests. Notebook dependencies were deliberately not installed; notebook fresh-kernel evidence is recorded separately.",
+  "environment": {
+    "created_new_venv": true,
+    "include_system_site_packages": false,
+    "user_site_enabled": false,
+    "isolated_python_flag": 1,
+    "executable": "G:\\VScode\\pj_mic\\azure-churn-clv\\.cache\\w3_clean_env\\Scripts\\python.exe",
+    "python_version": "3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]",
+    "prefix": "G:\\VScode\\pj_mic\\azure-churn-clv\\.cache\\w3_clean_env",
+    "base_prefix": "G:\\VScode\\pj_mic\\azure-churn-clv\\.runtime\\python312",
+    "pyvenv_cfg": "home = G:\\VScode\\pj_mic\\azure-churn-clv\\.runtime\\python312\ninclude-system-site-packages = false\nversion = 3.12.9\nexecutable = G:\\VScode\\pj_mic\\azure-churn-clv\\.venv\\Scripts\\python.exe\ncommand = G:\\VScode\\pj_mic\\azure-churn-clv\\.venv\\Scripts\\python.exe -m venv G:\\VScode\\pj_mic\\azure-churn-clv\\.cache\\w3_clean_env\n",
+    "packages": {
+      "joblib": "1.4.2",
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "pip": "24.3.1",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2024.2",
+      "scikit-learn": "1.5.2",
+      "scipy": "1.13.1",
+      "six": "1.16.0",
+      "threadpoolctl": "3.5.0",
+      "tzdata": "2024.2"
+    },
+    "requirements_file": "requirements_w3.txt",
+    "requirements_sha256": "c5d4a04a04dfde0bcbca00cc699b7d821882364cf2d7f54a9d88dc949395b3e2",
+    "all_pinned_versions_match": true,
+    "pip_check_command": [
+      "G:\\VScode\\pj_mic\\azure-churn-clv\\.cache\\w3_clean_env\\Scripts\\python.exe",
+      "-I",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "pip_check_returncode": 0,
+    "pip_check_output": "No broken requirements found.",
+    "installation_metadata": ".cache/w3_clean_validation/environment_installation.json",
+    "installation_elapsed_seconds": 143.95,
+    "installation_logs": [
+      ".cache/w3_clean_validation/install_stdout.log",
+      ".cache/w3_clean_validation/install_verbose.log"
+    ]
+  },
+  "workflow": {
+    "status": "passed",
+    "returncode": 0,
+    "command": [
+      "G:\\VScode\\pj_mic\\azure-churn-clv\\.cache\\w3_clean_env\\Scripts\\python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "G:\\VScode\\pj_mic\\azure-churn-clv\\scripts\\run_week3.py",
+      "--skip-notebook",
+      "--output-dir",
+      ".cache/w3_clean_validation/data",
+      "--model-dir",
+      ".cache/w3_clean_validation/model",
+      "--reports-dir",
+      ".cache/w3_clean_validation/reports"
+    ],
+    "working_directory": "G:\\VScode\\pj_mic",
+    "non_project_working_directory": true,
+    "log": ".cache/w3_clean_validation/workflow_stdout.log",
+    "metadata": ".cache/w3_clean_validation/reports/w3_run_metadata.json",
+    "rows": 7043,
+    "columns": 25,
+    "train_rows": 5634,
+    "validation_rows": 1409,
+    "encoded_columns": 49,
+    "total_charges_missing": 11,
+    "quality_rules": 46,
+    "quality_rules_failed": 0,
+    "matrix_nonfinite_values": 0,
+    "serialized_transform_identical": true,
+    "raw_files_unchanged": 6
+  },
+  "source": {
+    "path": "data/raw/telco_customer_churn/WA_Fn-UseC_-Telco-Customer-Churn.csv",
+    "sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+    "identical_to_primary_and_current_file": true
+  },
+  "business_reproducibility": {
+    "files_compared": 17,
+    "business_hashes_identical": true,
+    "physical_files_rehashed_and_identical": true,
+    "differences": {},
+    "physical_file_mismatches": {},
+    "business_hashes": {
+      "data/ids_train.csv": "0274838001f6b36e541661a7597317ce161dffaab3090a23bfa46afec6b6e1ec",
+      "data/ids_validation.csv": "31f3cebb5da78162c0105cdc999cbd9b854a749285a7273e61257fce0872dd2e",
+      "data/missing_total_charges_audit.csv": "cfdd822e31afd4ea6c8f90014ddfbe02ae9df81ae555ccb87d8d693ef53c086c",
+      "data/split_membership.csv": "cfdc9f917c15f9e3ba92438a3db7903c41f10dfbf9396e947b32666bc3d5c28c",
+      "data/telco_clean.csv": "4e116fd797d8588306764a7cef2871ed76ce4619aa02f5c6aa6731a5309c9fd3",
+      "data/X_train.csv": "8f0a72d40833433c3bdf2567aea57962593d94c65b4be37a1270bda4c1f44615",
+      "data/X_validation.csv": "0406fd7a5ebf0a4ab959d5df911eadb7b7ae6c4eda106b52cf79019bc9b7cf18",
+      "data/y_train.csv": "09d1597ba671bf0d3ab16d5a395186130c40c766d94386b0f8f1a536c011004a",
+      "data/y_validation.csv": "04166dbe9f025c9e7a1597954cb547c65ddc1911a530baf388e95389cc08e655",
+      "tables/w3_before_after.csv": "6af11b92e2a3aa91aaee6458e1966fdf3983142f9dfd0eb8b6b275337fcc4b2f",
+      "tables/w3_category_reconciliation.csv": "00546230e00050b758bc1d55f310e2b4dd2fec303d254427446632ff3976d16e",
+      "tables/w3_charge_difference_summary.csv": "d9093e4628f3f0b144d00cec7f241bde8e10f51f2014a06607e54dcf3f577673",
+      "tables/w3_feature_dictionary.csv": "47aa186dc8edb5c99f72993c0a3921836e78dc0bfa934e9176b40b42b608eeb4",
+      "tables/w3_field_audit.csv": "7aa9c45e85556a5f73c60144c7a8449a1be3d35ff7c489cc921d88a0643ced10",
+      "tables/w3_preprocessor_parameters.csv": "726a3baa95feadbd5464bc65f1278f6d01715dd978aa40638c3f9f9c3c213c5e",
+      "tables/w3_quality_checks.csv": "14349af8050a220c9d79ca3f5cd17904b85c383b7209054dc1f71d2396385362",
+      "tables/w3_split_summary.csv": "cc2b57a730bba7e8e5c5236022d7e65950c649a0414fd4dda6bbdd8c4150fc02"
+    },
+    "primary_metadata": "reports/w3_run_metadata.json",
+    "primary_metadata_sha256": "6b5569a79512862a264d5214847714ca9b549303fc1351c0c23c73e9e4b0c5be",
+    "clean_metadata_sha256": "413a7ddc2d23adaf37e34835398621a5689af5c36a008f6f3693b18628c61817"
+  },
+  "code_matches_primary_workflow": true,
+  "code_and_test_files_unchanged_during_verification": true,
+  "code_and_config_sha256": {
+    "src/data/clean.py": "f350aabd372480bf83d226bbcd3b827a49501f5ce8e476a0f6a04a0561a9d8c3",
+    "src/data/preprocess.py": "2ef8c5265f4a6db0527829154afdeb74a1e35bc70aaf1e81c469d0cd7604ac6a",
+    "src/data/w3_workflow.py": "9ddc1679b21f45587f567ac4bdf3df6df1f922ebc4e6190ca50ef3aba18fddd9",
+    "scripts/run_week3.py": "7a8ab58b387c86ccf064011d51e445e3b9ad5d3acf026155ea86891d44b4688e",
+    "tests/test_w3_cleaning.py": "13584ceb9fc745dae933d0ae6a43b33fcdbdfea39c69335d1e7204deef2296f7",
+    "tests/test_w3_workflow.py": "0b8d87873ab8ecd2b3d8bd67a192e9356f5b5b844d56a60dad0e23e703654571",
+    "configs/w3_cleaning.json": "d5d5d373de8a94a74a2c08aea25c6f6e04ef3ee174618aaf8c3d9fe46b3b230c",
+    "requirements_w3.txt": "c5d4a04a04dfde0bcbca00cc699b7d821882364cf2d7f54a9d88dc949395b3e2"
+  },
+  "tests": {
+    "status": "passed",
+    "discovery_pattern": "tests/test_w3*.py",
+    "test_files": [
+      "tests/test_w3_cleaning.py",
+      "tests/test_w3_workflow.py"
+    ],
+    "tests_run": 52,
+    "passed": 51,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1,
+    "expected_failures": 0,
+    "unexpected_successes": 0,
+    "elapsed_seconds": 6.766,
+    "results": [
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c01_c02_blanks_become_tracked_unknowns_without_dropping_customers",
+        "status": "passed",
+        "elapsed_seconds": 0.266
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c01_nonempty_unparseable_charges_raise_instead_of_becoming_missing",
+        "status": "passed",
+        "elapsed_seconds": 0.078
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c01_zero_charge_is_known_and_distinct_from_missing",
+        "status": "passed",
+        "elapsed_seconds": 0.062
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c03_c04_structural_categories_are_preserved_and_networks_are_applicable",
+        "status": "passed",
+        "elapsed_seconds": 0.063
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c03_each_internet_service_rejects_both_directions_of_logical_conflict",
+        "status": "passed",
+        "elapsed_seconds": 0.437
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c04_phone_service_rejects_both_directions_of_logical_conflict",
+        "status": "passed",
+        "elapsed_seconds": 0.079
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c04_unknown_or_missing_categories_are_rejected",
+        "status": "passed",
+        "elapsed_seconds": 0.109
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c05_duplicate_ids_are_detected_after_whitespace_normalization",
+        "status": "passed",
+        "elapsed_seconds": 0.016
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c05_empty_or_nonstring_customer_ids_raise",
+        "status": "passed",
+        "elapsed_seconds": 0.062
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c05_ids_labels_order_and_custom_index_survive_cleaning",
+        "status": "passed",
+        "elapsed_seconds": 0.063
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c05_missing_unknown_or_numeric_labels_raise",
+        "status": "passed",
+        "elapsed_seconds": 0.14
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c06_illegal_numerical_values_raise",
+        "status": "passed",
+        "elapsed_seconds": 0.36
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c06_legal_values_beyond_observed_population_are_not_clipped",
+        "status": "passed",
+        "elapsed_seconds": 0.078
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c07_historical_total_is_not_replaced_with_current_price_product",
+        "status": "passed",
+        "elapsed_seconds": 0.109
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c08_c09_output_has_only_original_columns_and_four_traceable_flags",
+        "status": "passed",
+        "elapsed_seconds": 0.063
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_c10_fit_transform_does_not_change_input_and_cleaning_is_idempotent",
+        "status": "passed",
+        "elapsed_seconds": 0.14
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_config_cannot_register_null_empty_or_untrimmed_categories",
+        "status": "passed",
+        "elapsed_seconds": 0.0
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_config_rejects_nonfinite_or_nonnumeric_range_boundaries",
+        "status": "passed",
+        "elapsed_seconds": 0.015
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_config_rejects_reversed_empty_and_unrepresentable_integer_ranges",
+        "status": "passed",
+        "elapsed_seconds": 0.0
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_config_rejects_truthy_strings_and_numbers_as_boolean_rules",
+        "status": "passed",
+        "elapsed_seconds": 0.016
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_configuration_cannot_introduce_label_features_or_reverse_labels",
+        "status": "passed",
+        "elapsed_seconds": 0.016
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_existing_derived_values_must_agree_with_sources",
+        "status": "passed",
+        "elapsed_seconds": 0.187
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_fit_freezes_private_configuration_and_json_configuration_is_supported",
+        "status": "passed",
+        "elapsed_seconds": 0.188
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_integer_representation_limits_are_distinct_from_configured_business_bounds",
+        "status": "passed",
+        "elapsed_seconds": 0.078
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_large_fractional_and_out_of_int64_strings_are_rejected",
+        "status": "passed",
+        "elapsed_seconds": 0.062
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_large_integer_strings_are_exact_even_with_float_elsewhere_in_column",
+        "status": "passed",
+        "elapsed_seconds": 0.094
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_read_raw_preserves_literal_na_ids_blank_fields_and_source_bytes",
+        "status": "passed",
+        "elapsed_seconds": 0.125
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_schema_missing_unknown_duplicate_and_partial_derived_columns_raise",
+        "status": "passed",
+        "elapsed_seconds": 0.016
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_transform_before_fit_raises_and_saved_cleaner_is_reusable",
+        "status": "passed",
+        "elapsed_seconds": 0.125
+      },
+      {
+        "test": "test_w3_cleaning.CleaningContractTests.test_whitespace_normalization_is_explicit_and_numerical_types_are_stable",
+        "status": "passed",
+        "elapsed_seconds": 0.078
+      },
+      {
+        "test": "test_w3_cleaning.FrozenSourceIntegrationTests.test_frozen_w1_source_matches_w2_baseline_and_is_unchanged",
+        "status": "passed",
+        "elapsed_seconds": 0.5
+      },
+      {
+        "test": "test_w3_cleaning.PreprocessingBoundaryTests.test_all_training_totals_missing_preserves_column_and_explicit_missingness",
+        "status": "passed",
+        "elapsed_seconds": 0.547
+      },
+      {
+        "test": "test_w3_cleaning.PreprocessingBoundaryTests.test_c05_preprocessor_rejects_leakage_fields_and_missing_predictors",
+        "status": "passed",
+        "elapsed_seconds": 0.187
+      },
+      {
+        "test": "test_w3_cleaning.PreprocessingBoundaryTests.test_c05_split_excludes_id_and_both_labels_and_returns_independent_objects",
+        "status": "passed",
+        "elapsed_seconds": 0.125
+      },
+      {
+        "test": "test_w3_cleaning.PreprocessingBoundaryTests.test_c10_training_median_and_scaling_ignore_validation_extremes",
+        "status": "passed",
+        "elapsed_seconds": 0.453
+      },
+      {
+        "test": "test_w3_cleaning.PreprocessingBoundaryTests.test_column_reordering_is_safe_and_duplicate_columns_are_rejected",
+        "status": "passed",
+        "elapsed_seconds": 0.25
+      },
+      {
+        "test": "test_w3_cleaning.PreprocessingBoundaryTests.test_legal_category_absent_from_training_keeps_stable_named_one_hot_columns",
+        "status": "passed",
+        "elapsed_seconds": 0.235
+      },
+      {
+        "test": "test_w3_cleaning.PreprocessingBoundaryTests.test_preprocessing_preserves_feature_input_and_binary_semantics",
+        "status": "passed",
+        "elapsed_seconds": 0.218
+      },
+      {
+        "test": "test_w3_cleaning.PreprocessingBoundaryTests.test_preprocessor_rejects_unknown_category_and_inconsistent_flags",
+        "status": "passed",
+        "elapsed_seconds": 0.282
+      },
+      {
+        "test": "test_w3_cleaning.PreprocessingBoundaryTests.test_saved_preprocessor_has_identical_values_and_feature_names",
+        "status": "passed",
+        "elapsed_seconds": 0.25
+      },
+      {
+        "test": "test_w3_cleaning.PreprocessingBoundaryTests.test_split_rejects_extra_label_derived_fields_and_raw_input",
+        "status": "passed",
+        "elapsed_seconds": 0.125
+      },
+      {
+        "test": "test_w3_workflow.WorkflowOutputProtectionTests.test_cli_rejects_unsafe_destinations_overlap_and_external_input_before_dispatch",
+        "status": "passed",
+        "elapsed_seconds": 0.109
+      },
+      {
+        "test": "test_w3_workflow.WorkflowOutputProtectionTests.test_cli_resolves_relative_paths_from_project_and_rejects_raw_redirect",
+        "status": "passed",
+        "elapsed_seconds": 0.016
+      },
+      {
+        "test": "test_w3_workflow.WorkflowOutputProtectionTests.test_directory_at_an_output_filename_is_rejected_before_workflow_runs",
+        "status": "passed",
+        "elapsed_seconds": 0.031
+      },
+      {
+        "test": "test_w3_workflow.WorkflowOutputProtectionTests.test_existing_output_file_symlink_to_raw_is_rejected_before_workflow_runs",
+        "status": "skipped",
+        "reason": "Temporary file symlink unavailable (OS error 1314); directory redirects and hard links are tested separately",
+        "elapsed_seconds": 0.016
+      },
+      {
+        "test": "test_w3_workflow.WorkflowOutputProtectionTests.test_external_input_is_rejected_before_any_workflow_io",
+        "status": "passed",
+        "elapsed_seconds": 0.015
+      },
+      {
+        "test": "test_w3_workflow.WorkflowOutputProtectionTests.test_hard_link_to_raw_is_rejected_before_workflow_runs",
+        "status": "passed",
+        "elapsed_seconds": 0.031
+      },
+      {
+        "test": "test_w3_workflow.WorkflowOutputProtectionTests.test_new_and_existing_regular_output_files_are_validated_without_mutation",
+        "status": "passed",
+        "elapsed_seconds": 0.032
+      },
+      {
+        "test": "test_w3_workflow.WorkflowOutputProtectionTests.test_output_target_traversal_cannot_escape_its_directory",
+        "status": "passed",
+        "elapsed_seconds": 0.015
+      },
+      {
+        "test": "test_w3_workflow.WorkflowOutputProtectionTests.test_redirected_output_root_is_rejected",
+        "status": "passed",
+        "elapsed_seconds": 0.016
+      },
+      {
+        "test": "test_w3_workflow.WorkflowOutputProtectionTests.test_reports_tables_directory_link_to_raw_is_rejected_before_workflow_runs",
+        "status": "passed",
+        "elapsed_seconds": 0.062
+      },
+      {
+        "test": "test_w3_workflow.WorkflowQualityEvidenceTests.test_optional_lower_bound_and_configured_upper_bound_have_correct_audit_entries",
+        "status": "passed",
+        "elapsed_seconds": 0.11
+      }
+    ],
+    "log": ".cache/w3_clean_validation/tests_stdout.log"
+  },
+  "verification_command": [
+    "G:\\VScode\\pj_mic\\azure-churn-clv\\.cache\\w3_clean_env\\Scripts\\python.exe",
+    "-I",
+    "-X",
+    "utf8",
+    "G:\\VScode\\pj_mic\\azure-churn-clv\\.cache\\w3_clean_validation\\collect_verification.py"
+  ],
+  "log_sha256": {
+    ".cache/w3_clean_validation/install_stdout.log": "c2cbac1c426d528163983cf149eedd351b2c0b1e17686f87384c43547201289d",
+    ".cache/w3_clean_validation/install_verbose.log": "92840a68ae4d84569a7dc2b589a6b4bf3c2e3bab9a516ca86e34a75f3e6ed1e2",
+    ".cache/w3_clean_validation/workflow_stdout.log": "2b08d7ec9f0b9fabae40afa0be2674e76380cacfd2d852bbdce20bf008b2ef07",
+    ".cache/w3_clean_validation/tests_stdout.log": "8638d26e462b59a8ff440b4a5eafa2848711d197083d92d5ccdbe24801dd169a",
+    ".cache/w3_clean_validation/pip_check.log": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+  }
+}

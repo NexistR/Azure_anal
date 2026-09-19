@@ -1,0 +1,4 @@
+﻿field,training_median,training_mean_after_imputation,training_scale,training_variance,fit_rows,training_nonmissing,all_missing_fallback_used
+tenure,29,32.4850905218,24.5665630154,603.516018389,5634,5634,False
+MonthlyCharges,70.5,64.9299609514,30.135430576,908.144176001,5634,5634,False
+TotalCharges,1398.125,2301.3199503,2277.60668694,5187492.22038,5634,5626,False

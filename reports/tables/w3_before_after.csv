@@ -1,0 +1,15 @@
+﻿metric,before,after,policy
+rows,7043,7043,preserve
+columns,21,25,add 4 documented fields
+unique_customer_ids,7043,7043,preserve
+churn_yes,1869,1869,preserve
+churn_no,5174,5174,preserve
+total_charges_blank,11,0,blank converted to NA
+total_charges_explicit_na,0,11,preserve unknown meaning
+total_charges_semantic_missing,11,11,preserve
+total_charges_nonempty_parse_failure,0,0,strict conversion rejects invalid tokens
+zero_tenure,11,11,preserve
+no_internet,1526,1526,preserve
+internet_customers,5517,5517,preserve
+monthly_charges_iqr_outliers,0,0,"diagnose, no winsorization"
+dropped_rows,0,0,no deletion

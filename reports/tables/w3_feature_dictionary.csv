@@ -1,0 +1,50 @@
+﻿position,feature,type,source,meaning,scope
+0,numeric__tenure,float64,tenure,training median then z-score,W3 preprocessing demonstration; not W4 final feature set
+1,numeric__MonthlyCharges,float64,MonthlyCharges,training median then z-score,W3 preprocessing demonstration; not W4 final feature set
+2,numeric__TotalCharges,float64,TotalCharges,training median then z-score,W3 preprocessing demonstration; not W4 final feature set
+3,categorical__gender_Female,float64,gender_Female,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+4,categorical__gender_Male,float64,gender_Male,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+5,categorical__SeniorCitizen_0,float64,SeniorCitizen_0,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+6,categorical__SeniorCitizen_1,float64,SeniorCitizen_1,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+7,categorical__Partner_No,float64,Partner_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+8,categorical__Partner_Yes,float64,Partner_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+9,categorical__Dependents_No,float64,Dependents_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+10,categorical__Dependents_Yes,float64,Dependents_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+11,categorical__PhoneService_No,float64,PhoneService_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+12,categorical__PhoneService_Yes,float64,PhoneService_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+13,categorical__MultipleLines_No,float64,MultipleLines_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+14,categorical__MultipleLines_Yes,float64,MultipleLines_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+15,categorical__MultipleLines_No phone service,float64,MultipleLines_No phone service,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+16,categorical__InternetService_DSL,float64,InternetService_DSL,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+17,categorical__InternetService_Fiber optic,float64,InternetService_Fiber optic,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+18,categorical__InternetService_No,float64,InternetService_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+19,categorical__OnlineSecurity_No,float64,OnlineSecurity_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+20,categorical__OnlineSecurity_Yes,float64,OnlineSecurity_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+21,categorical__OnlineSecurity_No internet service,float64,OnlineSecurity_No internet service,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+22,categorical__OnlineBackup_No,float64,OnlineBackup_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+23,categorical__OnlineBackup_Yes,float64,OnlineBackup_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+24,categorical__OnlineBackup_No internet service,float64,OnlineBackup_No internet service,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+25,categorical__DeviceProtection_No,float64,DeviceProtection_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+26,categorical__DeviceProtection_Yes,float64,DeviceProtection_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+27,categorical__DeviceProtection_No internet service,float64,DeviceProtection_No internet service,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+28,categorical__TechSupport_No,float64,TechSupport_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+29,categorical__TechSupport_Yes,float64,TechSupport_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+30,categorical__TechSupport_No internet service,float64,TechSupport_No internet service,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+31,categorical__StreamingTV_No,float64,StreamingTV_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+32,categorical__StreamingTV_Yes,float64,StreamingTV_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+33,categorical__StreamingTV_No internet service,float64,StreamingTV_No internet service,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+34,categorical__StreamingMovies_No,float64,StreamingMovies_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+35,categorical__StreamingMovies_Yes,float64,StreamingMovies_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+36,categorical__StreamingMovies_No internet service,float64,StreamingMovies_No internet service,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+37,categorical__Contract_Month-to-month,float64,Contract_Month-to-month,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+38,categorical__Contract_One year,float64,Contract_One year,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+39,categorical__Contract_Two year,float64,Contract_Two year,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+40,categorical__PaperlessBilling_No,float64,PaperlessBilling_No,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+41,categorical__PaperlessBilling_Yes,float64,PaperlessBilling_Yes,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+42,categorical__PaymentMethod_Bank transfer (automatic),float64,PaymentMethod_Bank transfer (automatic),explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+43,categorical__PaymentMethod_Credit card (automatic),float64,PaymentMethod_Credit card (automatic),explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+44,categorical__PaymentMethod_Electronic check,float64,PaymentMethod_Electronic check,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+45,categorical__PaymentMethod_Mailed check,float64,PaymentMethod_Mailed check,explicit registered category,W3 preprocessing demonstration; not W4 final feature set
+46,binary__total_charges_missing,float64,total_charges_missing,unscaled cleaning flag,W3 preprocessing demonstration; not W4 final feature set
+47,binary__tenure_zero,float64,tenure_zero,unscaled cleaning flag,W3 preprocessing demonstration; not W4 final feature set
+48,binary__internet_applicable,float64,internet_applicable,unscaled cleaning flag,W3 preprocessing demonstration; not W4 final feature set

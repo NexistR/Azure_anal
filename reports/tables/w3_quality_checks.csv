@@ -1,0 +1,47 @@
+﻿rule,count,proportion,scope,action,basis,status
+missing_customer_id,0,0,all customers,reject,data contract,passed
+duplicate_customer_id,0,0,all customers,reject,data contract,passed
+invalid_churn_label,0,0,all customers,reject,data contract,passed
+invalid_category_gender,0,0,all customers,reject,data contract,passed
+invalid_category_SeniorCitizen,0,0,all customers,reject,data contract,passed
+invalid_category_Partner,0,0,all customers,reject,data contract,passed
+invalid_category_Dependents,0,0,all customers,reject,data contract,passed
+invalid_category_PhoneService,0,0,all customers,reject,data contract,passed
+invalid_category_MultipleLines,0,0,all customers,reject,data contract,passed
+invalid_category_InternetService,0,0,all customers,reject,data contract,passed
+invalid_category_OnlineSecurity,0,0,all customers,reject,data contract,passed
+invalid_category_OnlineBackup,0,0,all customers,reject,data contract,passed
+invalid_category_DeviceProtection,0,0,all customers,reject,data contract,passed
+invalid_category_TechSupport,0,0,all customers,reject,data contract,passed
+invalid_category_StreamingTV,0,0,all customers,reject,data contract,passed
+invalid_category_StreamingMovies,0,0,all customers,reject,data contract,passed
+invalid_category_Contract,0,0,all customers,reject,data contract,passed
+invalid_category_PaperlessBilling,0,0,all customers,reject,data contract,passed
+invalid_category_PaymentMethod,0,0,all customers,reject,data contract,passed
+invalid_category_Churn,0,0,all customers,reject,data contract,passed
+nonfinite_SeniorCitizen,0,0,all customers,reject,data contract,passed
+missing_SeniorCitizen,0,0,all customers,reject,data contract,passed
+below_minimum_SeniorCitizen,0,0,all customers,reject,data contract,passed
+above_maximum_SeniorCitizen,0,0,all customers,reject,data contract,passed
+noninteger_SeniorCitizen,0,0,all customers,reject,data contract,passed
+nonfinite_tenure,0,0,all customers,reject,data contract,passed
+missing_tenure,0,0,all customers,reject,data contract,passed
+below_minimum_tenure,0,0,all customers,reject,data contract,passed
+noninteger_tenure,0,0,all customers,reject,data contract,passed
+nonfinite_MonthlyCharges,0,0,all customers,reject,data contract,passed
+missing_MonthlyCharges,0,0,all customers,reject,data contract,passed
+below_minimum_MonthlyCharges,0,0,all customers,reject,data contract,passed
+nonfinite_TotalCharges,0,0,all customers,reject,data contract,passed
+missing_TotalCharges,11,0.00156183444555,all customers,retain_and_flag,data contract,documented
+below_minimum_TotalCharges,0,0,all customers,reject,data contract,passed
+internet_consistency_OnlineSecurity,0,0,all customers,reject,data contract,passed
+internet_consistency_OnlineBackup,0,0,all customers,reject,data contract,passed
+internet_consistency_DeviceProtection,0,0,all customers,reject,data contract,passed
+internet_consistency_TechSupport,0,0,all customers,reject,data contract,passed
+internet_consistency_StreamingTV,0,0,all customers,reject,data contract,passed
+internet_consistency_StreamingMovies,0,0,all customers,reject,data contract,passed
+phone_consistency,0,0,all customers,reject,data contract,passed
+zero_tenure_boundary,11,0.00156183444555,all customers,retain_and_flag,"Legal lower boundary, not deleted",documented
+iqr_diagnostic_tenure,0,0,all customers,retain_and_flag,"1.5 IQR diagnostic, fences [-60, 124], not a business validity bound",passed
+iqr_diagnostic_MonthlyCharges,0,0,all customers,retain_and_flag,"1.5 IQR diagnostic, fences [-46.025, 171.375], not a business validity bound",passed
+iqr_diagnostic_TotalCharges,0,0,all customers,retain_and_flag,"1.5 IQR diagnostic, fences [-4688.48, 8884.67], not a business validity bound",passed
