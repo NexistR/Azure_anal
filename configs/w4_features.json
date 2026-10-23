@@ -1,0 +1,17 @@
+{
+  "version": "w4-telco-features-v1.0.0",
+  "tenure_band_edges": [0, 6, 12, 24, 48],
+  "tenure_band_labels": ["zero", "1_to_6", "7_to_12", "13_to_24", "25_to_48", "49_plus"],
+  "monthly_charge_band_edges": [35.0, 70.0, 100.0],
+  "monthly_charge_band_labels": ["up_to_35", "35_to_70", "70_to_100", "over_100"],
+  "new_customer_months": 6,
+  "contract_months": {"Month-to-month": 1, "One year": 12, "Two year": 24},
+  "semantics": {
+    "observation": "Static Telco snapshot; no verified dates or future observation window.",
+    "thresholds": "Fixed reviewable scenario thresholds; never empirical population quantiles.",
+    "tenure_zero": "Historical averages and accumulated-charge comparisons remain unknown (NA).",
+    "internet_absence": "Internet-only counts and interactions retain NA; internet_applicable identifies structural absence.",
+    "monetary_proxies": "Current-rate arithmetic scenarios only; not actual historic charges, future revenue, or CLV.",
+    "fit_boundary": "Builder learns no statistics; downstream imputer and scaler fit inside training folds only."
+  }
+}

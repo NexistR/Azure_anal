@@ -1,1 +1,1 @@
--r requirements-core.txt
+-r requirements/runtime.txt

@@ -1,0 +1,36 @@
+{
+  "version": "w8-static-segmentation-v1",
+  "seed": 42,
+  "threads": 2,
+  "training_rows": 4930,
+  "validation_rows": 1056,
+  "risk_threshold": 0.3,
+  "value_field": "MonthlyCharges",
+  "value_quantile": 0.5,
+  "value_sensitivity_quantiles": [0.4, 0.5, 0.6],
+  "high_value_comparison": ">=",
+  "concentration_target": 0.6,
+  "numeric_features": ["tenure_log1p", "monthly_charges_log1p", "internet_addon_count"],
+  "binary_features": ["phone_service", "multiple_lines", "automatic_payment", "paperless_billing"],
+  "categorical_features": ["Contract", "InternetService"],
+  "categories": [["Month-to-month", "One year", "Two year"], ["DSL", "Fiber optic", "No"]],
+  "categorical_block_scale": 0.7071067811865475,
+  "encoded_dimensions": 13,
+  "silhouette_sample_size": 2000,
+  "kmeans": {"k_values": [2, 3, 4, 5, 6], "n_init": 20, "max_iter": 300, "tol": 0.0001, "algorithm": "lloyd", "stability_seeds": [42, 43, 44, 45, 46]},
+  "dbscan": {"min_samples_values": [10, 25], "knn_distance_quantiles": [0.7, 0.85, 0.95], "minimum_coverage": 0.5, "maximum_clusters": 20, "minimum_cluster_size": 30, "fallback_candidate_id": "dbscan_m10_q085"},
+  "selection_rules": {
+    "kmeans": "Maximize silhouette on the same fixed training sample; break exact ties by smaller training Davies-Bouldin index, then smaller k.",
+    "dbscan": "Eligible: at least 2 and at most 20 nonnoise clusters, coverage>=0.50, all nonnoise clusters>=30, defined conditional silhouette. Maximize coverage*conditional silhouette; tie by higher coverage, lower DBI, smaller eps, smaller min_samples. This heuristic is not directly compared with KMeans silhouette. If no candidate is eligible, retain the prespecified m10/Q85 candidate as an explicitly unsuccessful density comparison.",
+    "primary_algorithm": "KMeans is the prespecified full-coverage operational segmentation; DBSCAN is a separate density/noise diagnostic, not declared superior using a conditional metric.",
+    "weak_structure": "Flag KMeans silhouette<0.25 or minimum pairwise seed ARI<0.80; do not keep searching or rename weak clusters as confirmed segments.",
+    "dbscan_validation": "Apply only fitted training cores. Within eps choose the nearest core; exact distance ties use the smallest original training row index. If no core is reachable use -1. Ambiguous means reachable cores belong to at least two training clusters."
+  },
+  "interpretation": {
+    "features": "Static tenure, current fees, subscription breadth, contract and billing profile; not actual activity recency or frequency. Three numerical columns use train-fitted z scaling; binary flags remain 0/1; each categorical one-hot block is divided by sqrt(2).",
+    "value": "Current monthly-fee proxy in dataset fee units per month; not profit, CLV, future realized revenue or a calibrated expected loss.",
+    "priority": "Frozen model p times MonthlyCharges is a scenario ranking weight, not intervention benefit, ROI or verified expected revenue loss.",
+    "rfm": "Unavailable: no last activity/transaction date and no activity or transaction count. No R or F is invented.",
+    "risk": "p>=0.30 is high risk; the opposite side is non-high risk and includes the prior low and medium bands. No policy threshold is retuned."
+  }
+}

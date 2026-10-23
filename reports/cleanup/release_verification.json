@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-23T09:57:39.895871+00:00",
+  "python": "3.12.9",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.5.2",
+    "xgboost": "2.1.4",
+    "joblib": "1.4.2",
+    "threadpoolctl": "3.6.0"
+  },
+  "unit_and_optional_integration": {
+    "tests_run": 25,
+    "passed": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": null,
+    "test_names": [],
+    "test_results_reused_after_documentation_only_change": true,
+    "data": "synthetic handwritten fixtures only",
+    "fits": 0
+  },
+  "static_analysis": {
+    "ruff_select": [
+      "F"
+    ],
+    "ruff_version": "0.17.2",
+    "result": "All checks passed!",
+    "compiled_python_files": 26
+  },
+  "public_file_checks": {
+    "scanned_files": 71,
+    "broken_relative_markdown_links": [],
+    "sensitive_pattern_findings": [],
+    "over_100MiB_files": 0,
+    "models_ignored_by_git": true,
+    "generated_outputs_ignored_by_git": true,
+    "final_paper_and_figures_byte_identical": 6
+  },
+  "limitations": [
+    "Pattern scanning is scoped, not a guarantee against every possible sensitive value.",
+    "Local tests used the inherited verified Windows environment; the GitHub Actions jobs have not yet run remotely.",
+    "Customer data and fitted models are not published. No training or new historical-test evaluation was performed."
+  ]
+}

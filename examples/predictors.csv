@@ -1,0 +1,7 @@
+customerID,tenure,MonthlyCharges,TotalCharges,gender,SeniorCitizen,Partner,Dependents,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,total_charges_missing,tenure_zero,internet_applicable
+DEMO-001,1,25.0,25.0,Female,0,Yes,No,Yes,No,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,0,0,1
+DEMO-002,24,75.0,1800.0,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,One year,Yes,Electronic check,0,0,1
+DEMO-003,48,100.0,4800.0,Female,1,Yes,No,Yes,No,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check,0,0,1
+DEMO-004,0,20.0,,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Electronic check,1,1,0
+DEMO-005,12,55.0,660.0,Female,0,Yes,No,Yes,No,DSL,Yes,Yes,Yes,Yes,Yes,Yes,One year,Yes,Electronic check,0,0,1
+DEMO-006,36,30.0,1080.0,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Electronic check,0,0,0

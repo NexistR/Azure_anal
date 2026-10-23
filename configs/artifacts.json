@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "path": "models/w7/churn_runtime.zip",
+      "sha256": "ef5087ea5018e931d4712497f66d93d839d9c2628bcf92709875793d1fee7629",
+      "bytes": 27785,
+      "tracked_by_git": false
+    },
+    {
+      "path": "models/w8/segmentation.joblib",
+      "sha256": "4f0276c687da077989eec37f1d3707c5fa5104b8aed9707d6a3b993a7d83a321",
+      "bytes": 168710,
+      "tracked_by_git": false
+    }
+  ]
+}

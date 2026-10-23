@@ -1,0 +1,263 @@
+{
+  "date": "2026-10-23",
+  "files": [
+    {
+      "source": "azure-churn-clv/src/__init__.py",
+      "destination": "src/__init__.py",
+      "local_only": false,
+      "source_sha256": "3f24843a8cadc324577bb91cabc4fe370f7468e7ca16c0fe7a2a56caad632b2f"
+    },
+    {
+      "source": "azure-churn-clv/src/data/__init__.py",
+      "destination": "src/data/__init__.py",
+      "local_only": false,
+      "source_sha256": "2cb74cc09e1b2070d87961705fa3701a85144525fbc2d268874d8d5df4af64f9"
+    },
+    {
+      "source": "azure-churn-clv/src/data/clean.py",
+      "destination": "src/data/clean.py",
+      "local_only": false,
+      "source_sha256": "f350aabd372480bf83d226bbcd3b827a49501f5ce8e476a0f6a04a0561a9d8c3"
+    },
+    {
+      "source": "azure-churn-clv/src/data/preprocess.py",
+      "destination": "src/data/preprocess.py",
+      "local_only": false,
+      "source_sha256": "2ef8c5265f4a6db0527829154afdeb74a1e35bc70aaf1e81c469d0cd7604ac6a"
+    },
+    {
+      "source": "azure-churn-clv/src/features/__init__.py",
+      "destination": "src/features/__init__.py",
+      "local_only": false,
+      "source_sha256": "7acb3949383a0eca4f6cd9179c9e672ee79189198e7ed944d3b806ca9a20982c"
+    },
+    {
+      "source": "azure-churn-clv/src/features/build.py",
+      "destination": "src/features/build.py",
+      "local_only": false,
+      "source_sha256": "56f09fbc69ec3abcaddc07363750986b9312a43823add6c13b85973f13650c60"
+    },
+    {
+      "source": "azure-churn-clv/src/models/__init__.py",
+      "destination": "src/models/__init__.py",
+      "local_only": false,
+      "source_sha256": "fdc08260a97dbd6f9cd744fd489a595900364ff5de25e7617acbdec34c83978f"
+    },
+    {
+      "source": "azure-churn-clv/src/segmentation/__init__.py",
+      "destination": "src/segmentation/__init__.py",
+      "local_only": false,
+      "source_sha256": "da2cb2ce34a545efda4828070e038ee6dadacab0c5f4da358d471c4abd7f5369"
+    },
+    {
+      "source": "azure-churn-clv/src/segmentation/w8.py",
+      "destination": "src/segmentation/w8.py",
+      "local_only": false,
+      "source_sha256": "cd34b99f6b60318ba16ade1274884628d39f716286828d12a04e038ef8148298"
+    },
+    {
+      "source": "azure-churn-clv/src/models/w7/__init__.py",
+      "destination": "src/models/w7/__init__.py",
+      "local_only": false,
+      "source_sha256": "61086f54812f472ea79201f80b6933fd768aac839ddc3f3b69a15a5061edacbf"
+    },
+    {
+      "source": "azure-churn-clv/src/models/w7/catalog.py",
+      "destination": "src/models/w7/catalog.py",
+      "local_only": false,
+      "source_sha256": "72a5691bce84d1bce3c37948838cc703efe6778ca5f9347a0ae54ab08f4e83a1"
+    },
+    {
+      "source": "azure-churn-clv/src/models/w7/contract.py",
+      "destination": "src/models/w7/contract.py",
+      "local_only": false,
+      "source_sha256": "f18e8c1517de666e08fb89a2106ccd6590ccada910e8d5652eb0f42dd0880893"
+    },
+    {
+      "source": "azure-churn-clv/src/models/w7/explain.py",
+      "destination": "src/models/w7/explain.py",
+      "local_only": false,
+      "source_sha256": "0a0d1b9353ef525299f859adaf02c3b135b9d98b48e21f87e5b385e1677931e8"
+    },
+    {
+      "source": "azure-churn-clv/src/models/w7/local_surrogate.py",
+      "destination": "src/models/w7/local_surrogate.py",
+      "local_only": false,
+      "source_sha256": "7c1caa5f3da90adc4bfb4a3f3d1fad2334a9f8b044ab2dd93b65abd9df75517b"
+    },
+    {
+      "source": "azure-churn-clv/src/models/w7/preprocessing.py",
+      "destination": "src/models/w7/preprocessing.py",
+      "local_only": false,
+      "source_sha256": "26a54a285fd35094ede65e539c98dbd78a29a58a33dbaf5bedf2dbaaddca3d8b"
+    },
+    {
+      "source": "azure-churn-clv/src/models/w7/risk.py",
+      "destination": "src/models/w7/risk.py",
+      "local_only": false,
+      "source_sha256": "d0afde9a7c2fe6ef31bff1fa4dbf9a757a07d290d56d4638d92c7791bcb79936"
+    },
+    {
+      "source": "azure-churn-clv/src/models/w7/runtime.py",
+      "destination": "src/models/w7/runtime.py",
+      "local_only": false,
+      "source_sha256": "f8f5cec04410ff27587a83fd7e431aae82bc4de1e332be292765a969136ef4a1"
+    },
+    {
+      "source": "azure-churn-clv/configs/w3_cleaning.json",
+      "destination": "configs/w3_cleaning.json",
+      "local_only": false,
+      "source_sha256": "d5d5d373de8a94a74a2c08aea25c6f6e04ef3ee174618aaf8c3d9fe46b3b230c"
+    },
+    {
+      "source": "azure-churn-clv/configs/w4_features.json",
+      "destination": "configs/w4_features.json",
+      "local_only": false,
+      "source_sha256": "c75d1bba25c30088b2b7b6ffc92e3f747c6b57a403913b93ae8e7afb2973c5c8"
+    },
+    {
+      "source": "azure-churn-clv/configs/w7_risk.json",
+      "destination": "configs/w7_risk.json",
+      "local_only": false,
+      "source_sha256": "d959bfa1570ba02fe2e767f3358566c98d946ed74a171cb05b9f59ae39435413"
+    },
+    {
+      "source": "azure-churn-clv/configs/w8_segmentation.json",
+      "destination": "configs/w8_segmentation.json",
+      "local_only": false,
+      "source_sha256": "ea74a0b137ede40d81f130e7e5e6926b1eb7ba27aae5ec953c0d8bfa93952945"
+    },
+    {
+      "source": "azure-churn-clv/scripts/predict_week7_runtime.py",
+      "destination": "scripts/predict.py",
+      "local_only": false,
+      "source_sha256": "c4c3001ac323bb056de82ba2d72276559a4234948bf321f847c6878d40582176"
+    },
+    {
+      "source": "azure-churn-clv/scripts/score_week7_risk.py",
+      "destination": "scripts/score_risk.py",
+      "local_only": false,
+      "source_sha256": "7f0ae2401a669a8988875517fe743a831162517e60e3542cf12405f268bcb8e0"
+    },
+    {
+      "source": "azure-churn-clv/reports/final_paper/revised_20261023/recheck_20261023/客户流失预测与价值分层研究.md",
+      "destination": "docs/final_report.md",
+      "local_only": false,
+      "source_sha256": "56b921d1cbb931397e3569ad72ed59cf785d832b53ed5f9cf2ac2fe50fd44894"
+    },
+    {
+      "source": "azure-churn-clv/reports/final_paper/revised_20261023/recheck_20261023/客户流失预测与价值分层研究.docx",
+      "destination": "docs/final_report.docx",
+      "local_only": false,
+      "source_sha256": "d643ee8e9e300f5bd9ac964c94de88a7e09d47b28cc9406bb4e5a4fc2b002bed"
+    },
+    {
+      "source": "azure-churn-clv/reports/final_paper/revised_20261023/recheck_20261023/客户流失预测与价值分层研究.pdf",
+      "destination": "docs/final_report.pdf",
+      "local_only": false,
+      "source_sha256": "d040e4522737624a0b73da1e84823fefe931649db9a1cc1057c34927cad375b6"
+    },
+    {
+      "source": "azure-churn-clv/reports/final_paper/revised_20261023/recheck_20261023/figures/fig01_shap.png",
+      "destination": "docs/figures/fig01_shap.png",
+      "local_only": false,
+      "source_sha256": "441dbbdec8da8dd97409e009b74445e9e9246cfe12fcd5fe0c471a91849a0001"
+    },
+    {
+      "source": "azure-churn-clv/reports/final_paper/revised_20261023/recheck_20261023/figures/fig02_capacity.png",
+      "destination": "docs/figures/fig02_capacity.png",
+      "local_only": false,
+      "source_sha256": "dfdee19fc8fb45d0540b98419d3d46ea9f99bec7a58cd0c13945f8a27229a289"
+    },
+    {
+      "source": "azure-churn-clv/reports/final_paper/revised_20261023/recheck_20261023/figures/fig03_quadrants.png",
+      "destination": "docs/figures/fig03_quadrants.png",
+      "local_only": false,
+      "source_sha256": "ebe55f36996fd0284a2bc9b8118f7bdf35f487436ddb691598b608b015c18285"
+    },
+    {
+      "source": "week6_sub/整理报告_2026-10-14/01_历史模型性能对照报告.md",
+      "destination": "docs/model_history.md",
+      "local_only": false,
+      "source_sha256": "3080b00cdb33581d0363e700bb723c22adddfaaa9d555b4ea21ebe83eb21382d"
+    },
+    {
+      "source": "week6_sub/整理报告_2026-10-14/02_历史验证集性能对照.csv",
+      "destination": "reports/results/history_validation.csv",
+      "local_only": false,
+      "source_sha256": "7d5056f92c47b9e09201169f7206f5dc4af2923732a0b4ef7a7c84d71c2f4833"
+    },
+    {
+      "source": "week6_sub/整理报告_2026-10-14/03_训练OOF性能对照.csv",
+      "destination": "reports/results/history_oof.csv",
+      "local_only": false,
+      "source_sha256": "42586d3a4089f39f590d25622afe2853814725c3693b463c39858063d7827501"
+    },
+    {
+      "source": "azure-churn-clv/reports/w7/explainability/global_top10.csv",
+      "destination": "reports/results/global_top10.csv",
+      "local_only": false,
+      "source_sha256": "1c7c9f7c4cb77c7e8f7926a9a64bed1227b564023f3a8e331e86ec6ef3550c58"
+    },
+    {
+      "source": "azure-churn-clv/reports/w7/explainability/risk_summary.json",
+      "destination": "reports/results/risk_summary.json",
+      "local_only": false,
+      "source_sha256": "d2c3f9550becb4a8326ebcd91186d78dff611cfb42b5907bf1bd149944ced846"
+    },
+    {
+      "source": "azure-churn-clv/reports/w7/supplement_20261021/risk/common_thresholds.csv",
+      "destination": "reports/results/common_thresholds.csv",
+      "local_only": false,
+      "source_sha256": "0e56221eb90187e7fcf42e6a16326e70e41b53f001f84c04465f7d35ecebf46b"
+    },
+    {
+      "source": "azure-churn-clv/reports/w7/supplement_20261021/risk/capacity_budgets.csv",
+      "destination": "reports/results/capacity_budgets.csv",
+      "local_only": false,
+      "source_sha256": "8f0b1aba777470fc3e4ee2742670a1988c61334eff4090bd112c668479c89ed5"
+    },
+    {
+      "source": "azure-churn-clv/reports/w7/supplement_20261021/performance/stage_summary.csv",
+      "destination": "reports/results/stage_summary.csv",
+      "local_only": false,
+      "source_sha256": "8926bec631946350585cda362c1628471b27fc85b8b6980f3be8a7f49a021ff1"
+    },
+    {
+      "source": "azure-churn-clv/reports/w8/algorithm_comparison.csv",
+      "destination": "reports/results/algorithm_comparison.csv",
+      "local_only": false,
+      "source_sha256": "84f4b11b72b28984966a95b8922eb9301209f13d5880914a6540e21539a24cbb"
+    },
+    {
+      "source": "azure-churn-clv/reports/w8/cluster_profiles.csv",
+      "destination": "reports/results/cluster_profiles.csv",
+      "local_only": false,
+      "source_sha256": "6740b2faf57224084807201036300d3f2bae9ada7d4084b22ab5a2152057a2b7"
+    },
+    {
+      "source": "azure-churn-clv/reports/w8/quadrant_summary.csv",
+      "destination": "reports/results/quadrant_summary.csv",
+      "local_only": false,
+      "source_sha256": "877bc3542655da5fe73a62393cb28e7cfd98127fec0bc77049359356a387badb"
+    },
+    {
+      "source": "azure-churn-clv/reports/w8/value_sensitivity.csv",
+      "destination": "reports/results/value_sensitivity.csv",
+      "local_only": false,
+      "source_sha256": "3c2c95686b7abef15ac4310d9658fa16f64d937b37ddf8106dd40c482d4edee2"
+    },
+    {
+      "source": "azure-churn-clv/models/w7/churn_runtime.zip",
+      "destination": "models/w7/churn_runtime.zip",
+      "local_only": true,
+      "source_sha256": "ef5087ea5018e931d4712497f66d93d839d9c2628bcf92709875793d1fee7629"
+    },
+    {
+      "source": "azure-churn-clv/models/w8/segmentation.joblib",
+      "destination": "models/w8/segmentation.joblib",
+      "local_only": true,
+      "source_sha256": "4f0276c687da077989eec37f1d3707c5fa5104b8aed9707d6a3b993a7d83a321"
+    }
+  ]
+}

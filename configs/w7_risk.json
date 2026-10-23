@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "model_id": "champion_historical_xgboost_frozen",
+  "probability_meaning": "Static Telco proxy-model probability; not a calibrated future Azure churn probability.",
+  "score_multiplier": 100.0,
+  "low_upper_exclusive": 0.1,
+  "high_lower_inclusive": 0.3,
+  "classification_threshold": 0.3,
+  "display_decimals": 1,
+  "calibration_bins": 10,
+  "wilson_confidence": 0.95,
+  "risk_labels": {"low": "低", "medium": "中", "high": "高"},
+  "rule_basis": "Prespecified operational tiers: retain frozen positive decision at p>=0.30; p<0.10 identifies a lower-priority review band. No data-driven threshold search or capacity/cost optimality claim.",
+  "actions": {
+    "low": "常规维护：观察使用与服务反馈；低分不代表不会流失。",
+    "medium": "关注复核：核对近期体验、费用与合同背景，确认是否需要联系。",
+    "high": "优先人工复核：结合客户背景与贡献解释确定联系顺序；不自动承诺优惠。"
+  }
+}

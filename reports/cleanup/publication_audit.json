@@ -1,0 +1,555 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-23T09:49:28.688236+00:00",
+  "scope": [
+    "docs/model_history.md",
+    "reports/results/"
+  ],
+  "actions": {
+    "history_date_and_stop_date_explicit": true,
+    "unexecuted_proposals_archived_not_pending": true,
+    "history_tables_exactly_preserved": true,
+    "absolute_links_rewritten": 11,
+    "results_numeric_or_nonpath_cells_changed": 0,
+    "env_or_credential_contents_read": false,
+    "models_trained_or_predicted": 0,
+    "uploaded": false,
+    "final_paper_files_modified": false
+  },
+  "history": {
+    "path": "docs/model_history.md",
+    "before_sha256": "3080b00cdb33581d0363e700bb723c22adddfaaa9d555b4ea21ebe83eb21382d",
+    "after_sha256": "5d2fcd430a26fdaa9359a497aa93037aa68864b12e3006c35cbb30459d0bbe5a",
+    "link_rewrites": [
+      {
+        "label": "原数据与可行性审查",
+        "action": "plain_original_archive_reference",
+        "archive_relative_path": "reports/w6v2/feasibility_review.md"
+      },
+      {
+        "label": "本次三源与轮次协议",
+        "action": "plain_original_archive_reference",
+        "archive_relative_path": "configs/w6_continuation_protocol.json"
+      },
+      {
+        "label": "原68行方法登记",
+        "action": "plain_original_archive_reference",
+        "archive_relative_path": "week6_sub/整理报告_2026-10-14/04_W5至W6v8方法原始登记.csv"
+      },
+      {
+        "label": "19路线历史事实汇总",
+        "action": "plain_original_archive_reference",
+        "archive_relative_path": "reports/w6v10/history_comparison_facts.json"
+      },
+      {
+        "label": "155条OOF对照记录",
+        "action": "link_to_published_copy",
+        "destination": "../reports/results/history_oof.csv"
+      },
+      {
+        "label": "46条验证集记录",
+        "action": "link_to_published_copy",
+        "destination": "../reports/results/history_validation.csv"
+      },
+      {
+        "label": "v9评价",
+        "action": "plain_original_archive_reference",
+        "archive_relative_path": "reports/w6v9/complementary_blend/evaluation.json"
+      },
+      {
+        "label": "v10评价及独立复核",
+        "action": "plain_original_archive_reference",
+        "archive_relative_path": "reports/w6v10/focal_blend/completion_audit.json"
+      },
+      {
+        "label": "原成绩来源",
+        "action": "plain_original_archive_reference",
+        "archive_relative_path": "reports/w5/tables/test_metrics.csv"
+      },
+      {
+        "label": "失败尝试与评价边界",
+        "action": "plain_original_archive_reference",
+        "archive_relative_path": "week6_sub/整理报告_2026-10-14/05_失败尝试与评价边界.md"
+      },
+      {
+        "label": "整理目录阅读索引",
+        "action": "plain_original_archive_reference",
+        "archive_relative_path": "week6_sub/整理报告_2026-10-14/00_阅读索引.md"
+      }
+    ],
+    "relative_links": [
+      {
+        "label": "155条OOF对照记录",
+        "target": "../reports/results/history_oof.csv",
+        "exists": true
+      },
+      {
+        "label": "46条验证集记录",
+        "target": "../reports/results/history_validation.csv",
+        "exists": true
+      }
+    ]
+  },
+  "result_transformations": [
+    {
+      "path": "reports/results/history_oof.csv",
+      "before_sha256": "42586d3a4089f39f590d25622afe2853814725c3693b463c39858063d7827501",
+      "after_sha256": "0478b47d56a5ae924c9a968ca6d13da728f99cbac251f63625d42cc27584eec5",
+      "row_count": 155,
+      "changed_column": "证据路径",
+      "changed_cells": 115,
+      "all_other_cells_exactly_unchanged": true
+    },
+    {
+      "path": "reports/results/history_validation.csv",
+      "before_sha256": "7d5056f92c47b9e09201169f7206f5dc4af2923732a0b4ef7a7c84d71c2f4833",
+      "after_sha256": "c2b841deedebe74b661d5a0529416855870e6ad3f1c7defec092f138556230cc",
+      "row_count": 46,
+      "changed_column": "证据路径",
+      "changed_cells": 46,
+      "all_other_cells_exactly_unchanged": true
+    }
+  ],
+  "results": [
+    {
+      "path": "reports/results/algorithm_comparison.csv",
+      "sha256": "84f4b11b72b28984966a95b8922eb9301209f13d5880914a6540e21539a24cbb",
+      "bytes": 3948,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "rows": 11,
+      "columns": [
+        "algorithm",
+        "candidate_id",
+        "k",
+        "eps",
+        "min_samples",
+        "eps_quantile",
+        "selected",
+        "eligible",
+        "selection_score",
+        "inertia",
+        "train_clusters",
+        "noise_count",
+        "coverage",
+        "silhouette",
+        "dbi",
+        "min_cluster_size",
+        "max_cluster_size",
+        "silhouette_sample_n",
+        "silhouette_sample_clusters",
+        "silhouette_population",
+        "dbi_population",
+        "silhouette_sample_indices_sha256"
+      ],
+      "source_archive_relative_path": "reports/w8/algorithm_comparison.csv",
+      "source_sha256": "84f4b11b72b28984966a95b8922eb9301209f13d5880914a6540e21539a24cbb",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "reports/results/capacity_budgets.csv",
+      "sha256": "8f0b1aba777470fc3e4ee2742670a1988c61334eff4090bd112c668479c89ed5",
+      "bytes": 1737,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "rows": 5,
+      "columns": [
+        "threshold",
+        "population_n",
+        "n_selected",
+        "capacity_share",
+        "tp",
+        "fp",
+        "fn",
+        "tn",
+        "precision",
+        "recall",
+        "specificity",
+        "f1",
+        "lift",
+        "budget_share",
+        "budget_n",
+        "selection_uses_labels",
+        "threshold_domain",
+        "status",
+        "unused_slots",
+        "threshold_lower",
+        "threshold_upper",
+        "lower_inclusive",
+        "upper_inclusive",
+        "representative_threshold",
+        "cutoff_tie_size",
+        "next_tie_size",
+        "minimum_legal_capacity"
+      ],
+      "source_archive_relative_path": "reports/w7/supplement_20261021/risk/capacity_budgets.csv",
+      "source_sha256": "8f0b1aba777470fc3e4ee2742670a1988c61334eff4090bd112c668479c89ed5",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "reports/results/cluster_profiles.csv",
+      "sha256": "6740b2faf57224084807201036300d3f2bae9ada7d4084b22ab5a2152057a2b7",
+      "bytes": 4201,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "rows": 12,
+      "columns": [
+        "split",
+        "algorithm",
+        "cluster",
+        "is_noise",
+        "count",
+        "share",
+        "mean_p",
+        "observed_churn_rate",
+        "monthly_charge_mean",
+        "monthly_charge_sum",
+        "monthly_charge_share",
+        "tenure_mean",
+        "high_risk_share",
+        "high_value_share",
+        "priority_weight_sum",
+        "internet_addon_count_mean",
+        "month_to_month_share",
+        "fiber_share",
+        "phone_service_share",
+        "multiple_lines_share",
+        "automatic_payment_share",
+        "paperless_billing_share"
+      ],
+      "source_archive_relative_path": "reports/w8/cluster_profiles.csv",
+      "source_sha256": "6740b2faf57224084807201036300d3f2bae9ada7d4084b22ab5a2152057a2b7",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "reports/results/common_thresholds.csv",
+      "sha256": "0e56221eb90187e7fcf42e6a16326e70e41b53f001f84c04465f7d35ecebf46b",
+      "bytes": 2004,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "rows": 14,
+      "columns": [
+        "threshold",
+        "population_n",
+        "n_selected",
+        "capacity_share",
+        "tp",
+        "fp",
+        "fn",
+        "tn",
+        "precision",
+        "recall",
+        "specificity",
+        "f1",
+        "lift"
+      ],
+      "source_archive_relative_path": "reports/w7/supplement_20261021/risk/common_thresholds.csv",
+      "source_sha256": "0e56221eb90187e7fcf42e6a16326e70e41b53f001f84c04465f7d35ecebf46b",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "reports/results/global_top10.csv",
+      "sha256": "1c7c9f7c4cb77c7e8f7926a9a64bed1227b564023f3a8e331e86ec6ef3550c58",
+      "bytes": 4275,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "rows": 10,
+      "columns": [
+        "rank",
+        "feature",
+        "feature_index",
+        "mean_abs_shap",
+        "mean_signed_shap",
+        "positive_fraction",
+        "negative_fraction",
+        "nonzero_fraction",
+        "display_name",
+        "importance_share",
+        "validation_rank",
+        "validation_mean_abs_shap",
+        "bootstrap_top10_frequency",
+        "rank_ci_low",
+        "rank_ci_high",
+        "formula",
+        "sources",
+        "business_note",
+        "review_action"
+      ],
+      "source_archive_relative_path": "reports/w7/explainability/global_top10.csv",
+      "source_sha256": "1c7c9f7c4cb77c7e8f7926a9a64bed1227b564023f3a8e331e86ec6ef3550c58",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "reports/results/history_oof.csv",
+      "sha256": "0478b47d56a5ae924c9a968ca6d13da728f99cbac251f63625d42cc27584eec5",
+      "bytes": 77428,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "rows": 155,
+      "columns": [
+        "记录编号",
+        "阶段",
+        "新约定轮次",
+        "方法路线",
+        "候选",
+        "表征或组合",
+        "阈值",
+        "阈值来源",
+        "训练OOF_AUC",
+        "训练OOF_正类F1",
+        "训练OOF_AP",
+        "训练目标比值",
+        "记录性质",
+        "证据路径",
+        "限制"
+      ]
+    },
+    {
+      "path": "reports/results/history_validation.csv",
+      "sha256": "c2b841deedebe74b661d5a0529416855870e6ad3f1c7defec092f138556230cc",
+      "bytes": 15859,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "rows": 46,
+      "columns": [
+        "回顾排序",
+        "阶段",
+        "候选",
+        "原候选名",
+        "阈值来源",
+        "阈值",
+        "validation_AUC",
+        "validation_正类F1",
+        "validation_AP",
+        "目标比值",
+        "记录角色",
+        "稳定细分数",
+        "稳定细分说明",
+        "证据路径",
+        "评价集"
+      ]
+    },
+    {
+      "path": "reports/results/quadrant_summary.csv",
+      "sha256": "877bc3542655da5fe73a62393cb28e7cfd98127fec0bc77049359356a387badb",
+      "bytes": 1980,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "rows": 8,
+      "columns": [
+        "split",
+        "quadrant",
+        "quadrant_label",
+        "count",
+        "customer_share",
+        "monthly_charge_sum",
+        "monthly_charge_share",
+        "mean_p",
+        "observed_churn_rate",
+        "observed_churn_count",
+        "priority_weight_sum",
+        "priority_weight_share",
+        "monthly_charge_mean",
+        "tenure_mean"
+      ],
+      "source_archive_relative_path": "reports/w8/quadrant_summary.csv",
+      "source_sha256": "877bc3542655da5fe73a62393cb28e7cfd98127fec0bc77049359356a387badb",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "reports/results/README.md",
+      "sha256": "18a0c0f0060ae511b36384ca48ec3d8ce7a1094d6db16778eeb4f569cb9ecfb1",
+      "bytes": 1848,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note"
+    },
+    {
+      "path": "reports/results/risk_summary.json",
+      "sha256": "d2c3f9550becb4a8326ebcd91186d78dff611cfb42b5907bf1bd149944ced846",
+      "bytes": 12705,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "source_archive_relative_path": "reports/w7/explainability/risk_summary.json",
+      "source_sha256": "d2c3f9550becb4a8326ebcd91186d78dff611cfb42b5907bf1bd149944ced846",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "reports/results/stage_summary.csv",
+      "sha256": "8926bec631946350585cda362c1628471b27fc85b8b6980f3be8a7f49a021ff1",
+      "bytes": 4454,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "rows": 24,
+      "columns": [
+        "rows",
+        "stage",
+        "label",
+        "baseline_mean_ms",
+        "optimized_mean_ms",
+        "stage_mean_speedup",
+        "baseline_share_percent",
+        "optimized_share_percent",
+        "mean_reduction_ms",
+        "reduction_contribution_percent"
+      ],
+      "source_archive_relative_path": "reports/w7/supplement_20261021/performance/stage_summary.csv",
+      "source_sha256": "8926bec631946350585cda362c1628471b27fc85b8b6980f3be8a7f49a021ff1",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "reports/results/value_sensitivity.csv",
+      "sha256": "3c2c95686b7abef15ac4310d9658fa16f64d937b37ddf8106dd40c482d4edee2",
+      "bytes": 6346,
+      "sensitive_pattern_counts": {
+        "windows_absolute_path": 0,
+        "home_absolute_path": 0,
+        "telco_customer_identifier": 0,
+        "email_address": 0,
+        "github_token": 0,
+        "aws_access_key": 0,
+        "private_key_header": 0,
+        "azure_connection_secret": 0,
+        "credential_assignment": 0
+      },
+      "classification": "aggregate_results_or_reading_note",
+      "rows": 24,
+      "columns": [
+        "split",
+        "quadrant",
+        "quadrant_label",
+        "count",
+        "customer_share",
+        "monthly_charge_sum",
+        "monthly_charge_share",
+        "mean_p",
+        "observed_churn_rate",
+        "observed_churn_count",
+        "priority_weight_sum",
+        "priority_weight_share",
+        "monthly_charge_mean",
+        "tenure_mean",
+        "quantile",
+        "value_threshold"
+      ],
+      "source_archive_relative_path": "reports/w8/value_sensitivity.csv",
+      "source_sha256": "3c2c95686b7abef15ac4310d9658fa16f64d937b37ddf8106dd40c482d4edee2",
+      "byte_identical_to_original": true
+    }
+  ],
+  "limitations": [
+    "Pattern scan is targeted, not a universal proof of absence of every possible secret.",
+    "Aggregate schema and row interpretation were inspected; customer-level input data were not loaded.",
+    "Archive-relative evidence paths are provenance labels; most referenced raw artifacts intentionally remain local.",
+    "This receipt covers only the delegated paths; root owns whole-copy final validation."
+  ]
+}

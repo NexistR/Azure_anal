@@ -1,0 +1,264 @@
+{
+  "schema": "github-src-safe-cleanup-v1",
+  "created_at_utc": "2026-10-23T09:48:16.596878+00:00",
+  "status": "passed_no_further_safe_dead_code_found",
+  "source_project": "original_project",
+  "new_copy": ".",
+  "scope": "Only the 17 retained src Python files were reviewed. No predictor/cluster fit, no data prediction, and no pickle/joblib deserialization.",
+  "changes": {
+    "modified_source_files": [],
+    "deleted_source_files": [],
+    "removed_imports": [],
+    "removed_functions": [],
+    "renamed_bindings": [],
+    "reason": "The selected core already excludes all four unused-import and two unused-local bindings found in the original historical modules/runners. Ruff F, Vulture >=80% and scoped AST review find no remaining safe removal."
+  },
+  "checks": [
+    {
+      "name": "ruff_F",
+      "tool_version": "0.17.2",
+      "command": "ruff check --no-cache --select F --output-format json src",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "name": "vulture_min_confidence_80",
+      "python": "verified_local_python_3.12.9",
+      "target": "src",
+      "unused_items": 0,
+      "executed": true
+    },
+    {
+      "name": "AST_unused_imports_and_locals",
+      "files": 17,
+      "unused_imports": 0,
+      "unused_local_bindings": 0,
+      "isolated_private_helpers_confirmed": 0,
+      "note": "Public API, __all__ exports, class protocol methods and intentional del lifetime control are not dead-code evidence."
+    },
+    {
+      "name": "compile_without_bytecode",
+      "files": 17,
+      "status": "passed",
+      "method": "compile(source, path, exec) using original .venv Python with -B -X utf8"
+    },
+    {
+      "name": "imports_from_new_copy",
+      "modules": 17,
+      "status": "passed",
+      "original_project_not_in_sys_path": true,
+      "all_resolved_module_paths_inside_new_copy_src": true,
+      "method": "importlib.import_module for every retained source module; assert module.__file__ is under copied src"
+    },
+    {
+      "name": "byte_identity_to_original",
+      "files": 17,
+      "status": "passed"
+    }
+  ],
+  "retained_with_reason": [
+    {
+      "path": "src/models/w7/catalog.py",
+      "symbols": [
+        "LABELS",
+        "CATEGORY_LABELS",
+        "review_action"
+      ],
+      "reason": "Business labels/actions are useful public explanation presentation API; standalone SHAP math does not import catalog, but absence of internal calls does not justify deleting public display functionality."
+    },
+    {
+      "path": "src/models/w7/preprocessing.py",
+      "symbols": [
+        "export_preprocessor"
+      ],
+      "reason": "Needed by the portable frozen-model exporter; absence of calls inside src is expected for a CLI-facing API."
+    },
+    {
+      "path": "src/models/w7/explain.py",
+      "symbols": [
+        "FrozenTreeShap",
+        "global_rank",
+        "bootstrap_rank_stability"
+      ],
+      "reason": "Public exact SHAP entry points, used by portable explanation tooling and notebook analysis."
+    },
+    {
+      "path": "src/models/w7/local_surrogate.py",
+      "symbols": [
+        "EmpiricalLimeExplainer"
+      ],
+      "reason": "Public LIME functionality; local proxy fitting is distinct from churn model training."
+    },
+    {
+      "path": "src/models/w7/risk.py",
+      "symbols": [
+        "score_frame",
+        "summarize_scores",
+        "validate_probabilities"
+      ],
+      "reason": "CLI/API scoring and diagnostics, including bool/complex/finite/range boundaries, remain intact."
+    },
+    {
+      "path": "src/segmentation/w8.py",
+      "symbols": [
+        "fit_segmentation",
+        "assign_dbscan",
+        "fit_value_rules",
+        "add_value_risk",
+        "summarize_quadrants",
+        "summarize_clusters",
+        "monthly_concentration"
+      ],
+      "reason": "Public segmentation and value APIs; retain training-only fit semantics and existing-artifact application separately."
+    },
+    {
+      "path": "src/data/clean.py",
+      "symbols": [
+        "read_raw",
+        "TelcoCleaner",
+        "_parse_numeric"
+      ],
+      "reason": "Data contract and public cleaning API; private exact numeric parser is transitively required by final runtime."
+    },
+    {
+      "path": "src/data/preprocess.py",
+      "symbols": [
+        "split_xy",
+        "build_preprocessor",
+        "FeatureContract",
+        "FiniteArrayGuard"
+      ],
+      "reason": "Foundational preprocessing API plus persisted pickle classes."
+    },
+    {
+      "path": "src/features/build.py",
+      "symbols": [
+        "TelcoFeatureBuilder",
+        "build_feature_preprocessor"
+      ],
+      "reason": "Frozen historical model compatibility and optional preprocessing/export API; never rename saved class path."
+    }
+  ],
+  "pickle_compatibility": {
+    "must_retain_paths": [
+      "src.features.build.TelcoFeatureBuilder",
+      "src.data.preprocess.FeatureContract",
+      "src.data.preprocess.FiniteArrayGuard"
+    ],
+    "transitive_parser_module": "src.data.clean",
+    "inspection_source": "Original reports/github_cleanup_20261023/audit_runtime_dependencies.json records static opcode/byte evidence for models/w6final/champion_historical.pkl.",
+    "model_loaded_in_this_review": false,
+    "frozen_artifact_runtime": "UBJ+metadata ZIP loader does not use pickle; historical pickle export/reload requires original import paths and pinned sklearn/numpy/XGBoost versions."
+  },
+  "portable_api_notes": [
+    "The current FrozenTreeShap.explain accepts only train or validation partition labels and documents inherited-partition semantics. A generic external CSV must not be silently labelled validation; widen the scope explicitly in a separately reviewed copy change if needed.",
+    "Do not import the old run_week7_explainability or evaluate_week6_ensembles runner from this compact copy; those pull excluded historical modules/evidence. New CLIs should call copied library APIs directly.",
+    "Do not claim the old sealed source manifest verifies a modified distribution. This report binds the current retained source bytes; publication tooling should produce its own copy manifest."
+  ],
+  "source_manifest": [
+    {
+      "path": "src/__init__.py",
+      "sha256": "3f24843a8cadc324577bb91cabc4fe370f7468e7ca16c0fe7a2a56caad632b2f",
+      "original_sha256": "3f24843a8cadc324577bb91cabc4fe370f7468e7ca16c0fe7a2a56caad632b2f",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/__init__.py",
+      "sha256": "2cb74cc09e1b2070d87961705fa3701a85144525fbc2d268874d8d5df4af64f9",
+      "original_sha256": "2cb74cc09e1b2070d87961705fa3701a85144525fbc2d268874d8d5df4af64f9",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/clean.py",
+      "sha256": "f350aabd372480bf83d226bbcd3b827a49501f5ce8e476a0f6a04a0561a9d8c3",
+      "original_sha256": "f350aabd372480bf83d226bbcd3b827a49501f5ce8e476a0f6a04a0561a9d8c3",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/preprocess.py",
+      "sha256": "2ef8c5265f4a6db0527829154afdeb74a1e35bc70aaf1e81c469d0cd7604ac6a",
+      "original_sha256": "2ef8c5265f4a6db0527829154afdeb74a1e35bc70aaf1e81c469d0cd7604ac6a",
+      "unchanged": true
+    },
+    {
+      "path": "src/features/__init__.py",
+      "sha256": "7acb3949383a0eca4f6cd9179c9e672ee79189198e7ed944d3b806ca9a20982c",
+      "original_sha256": "7acb3949383a0eca4f6cd9179c9e672ee79189198e7ed944d3b806ca9a20982c",
+      "unchanged": true
+    },
+    {
+      "path": "src/features/build.py",
+      "sha256": "56f09fbc69ec3abcaddc07363750986b9312a43823add6c13b85973f13650c60",
+      "original_sha256": "56f09fbc69ec3abcaddc07363750986b9312a43823add6c13b85973f13650c60",
+      "unchanged": true
+    },
+    {
+      "path": "src/models/__init__.py",
+      "sha256": "fdc08260a97dbd6f9cd744fd489a595900364ff5de25e7617acbdec34c83978f",
+      "original_sha256": "fdc08260a97dbd6f9cd744fd489a595900364ff5de25e7617acbdec34c83978f",
+      "unchanged": true
+    },
+    {
+      "path": "src/models/w7/__init__.py",
+      "sha256": "61086f54812f472ea79201f80b6933fd768aac839ddc3f3b69a15a5061edacbf",
+      "original_sha256": "61086f54812f472ea79201f80b6933fd768aac839ddc3f3b69a15a5061edacbf",
+      "unchanged": true
+    },
+    {
+      "path": "src/models/w7/catalog.py",
+      "sha256": "72a5691bce84d1bce3c37948838cc703efe6778ca5f9347a0ae54ab08f4e83a1",
+      "original_sha256": "72a5691bce84d1bce3c37948838cc703efe6778ca5f9347a0ae54ab08f4e83a1",
+      "unchanged": true
+    },
+    {
+      "path": "src/models/w7/contract.py",
+      "sha256": "f18e8c1517de666e08fb89a2106ccd6590ccada910e8d5652eb0f42dd0880893",
+      "original_sha256": "f18e8c1517de666e08fb89a2106ccd6590ccada910e8d5652eb0f42dd0880893",
+      "unchanged": true
+    },
+    {
+      "path": "src/models/w7/explain.py",
+      "sha256": "0a0d1b9353ef525299f859adaf02c3b135b9d98b48e21f87e5b385e1677931e8",
+      "original_sha256": "0a0d1b9353ef525299f859adaf02c3b135b9d98b48e21f87e5b385e1677931e8",
+      "unchanged": true
+    },
+    {
+      "path": "src/models/w7/local_surrogate.py",
+      "sha256": "7c1caa5f3da90adc4bfb4a3f3d1fad2334a9f8b044ab2dd93b65abd9df75517b",
+      "original_sha256": "7c1caa5f3da90adc4bfb4a3f3d1fad2334a9f8b044ab2dd93b65abd9df75517b",
+      "unchanged": true
+    },
+    {
+      "path": "src/models/w7/preprocessing.py",
+      "sha256": "26a54a285fd35094ede65e539c98dbd78a29a58a33dbaf5bedf2dbaaddca3d8b",
+      "original_sha256": "26a54a285fd35094ede65e539c98dbd78a29a58a33dbaf5bedf2dbaaddca3d8b",
+      "unchanged": true
+    },
+    {
+      "path": "src/models/w7/risk.py",
+      "sha256": "d0afde9a7c2fe6ef31bff1fa4dbf9a757a07d290d56d4638d92c7791bcb79936",
+      "original_sha256": "d0afde9a7c2fe6ef31bff1fa4dbf9a757a07d290d56d4638d92c7791bcb79936",
+      "unchanged": true
+    },
+    {
+      "path": "src/models/w7/runtime.py",
+      "sha256": "f8f5cec04410ff27587a83fd7e431aae82bc4de1e332be292765a969136ef4a1",
+      "original_sha256": "f8f5cec04410ff27587a83fd7e431aae82bc4de1e332be292765a969136ef4a1",
+      "unchanged": true
+    },
+    {
+      "path": "src/segmentation/__init__.py",
+      "sha256": "da2cb2ce34a545efda4828070e038ee6dadacab0c5f4da358d471c4abd7f5369",
+      "original_sha256": "da2cb2ce34a545efda4828070e038ee6dadacab0c5f4da358d471c4abd7f5369",
+      "unchanged": true
+    },
+    {
+      "path": "src/segmentation/w8.py",
+      "sha256": "cd34b99f6b60318ba16ade1274884628d39f716286828d12a04e038ef8148298",
+      "original_sha256": "cd34b99f6b60318ba16ade1274884628d39f716286828d12a04e038ef8148298",
+      "unchanged": true
+    }
+  ],
+  "limitations": "Static dead-code tools do not prove all external public consumers. This pass deliberately favors preserving public/serialized behavior. No source edits were necessary; importing the libraries does not validate a model reload or numeric equivalence.",
+  "publication_note": "Machine paths replaced with role names; source hashes and check results preserved."
+}

@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-23T10:00:26.091246+00:00",
+  "scope": "isolated ZIP extraction; source/runtime/test payload is identical to the final publication",
+  "public_payload_files_before_this_receipt": 72,
+  "archive_crc": "passed",
+  "includes_git_history": false,
+  "includes_models": false,
+  "includes_customer_tables": false,
+  "working_directory": "isolated_extraction",
+  "checks": [
+    {
+      "entrypoint": "unittest discover",
+      "exit_code": 0
+    },
+    {
+      "entrypoint": "scripts/restore_local_artifacts.py",
+      "exit_code": 0
+    },
+    {
+      "entrypoint": "scripts/predict.py",
+      "exit_code": 0
+    },
+    {
+      "entrypoint": "scripts/score_risk.py",
+      "exit_code": 0
+    }
+  ],
+  "default_tests": {
+    "passed": 18,
+    "skipped_optional_models": 7,
+    "failures": 0
+  },
+  "local_artifact_restoration": "2 original artifacts restored with SHA-256 verification",
+  "synthetic_end_to_end_rows": 6,
+  "source_payload_unchanged": true,
+  "training_performed": false,
+  "original_customer_rows_read": false,
+  "environment": "inherited verified Python 3.12 Windows environment; fresh dependency installation not performed",
+  "publication_note": "Only this receipt and the file manifest are added after smoke testing. Archive hash is supplied in the sibling .zip.sha256 file."
+}

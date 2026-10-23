@@ -1,0 +1,7 @@
+customerID,churn_probability
+DEMO-001,0.0
+DEMO-002,0.05
+DEMO-003,0.1
+DEMO-004,0.299
+DEMO-005,0.3
+DEMO-006,1.0

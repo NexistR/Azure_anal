@@ -1,23 +1,43 @@
+# Python and local environments
 .venv/
 .runtime/
-.cache/
 .tools/
+.cache/
 __pycache__/
 *.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
 .ipynb_checkpoints/
-data/raw/*
-!data/raw/README.md
-data/processed/*
-!data/processed/README.md
+.coverage
+htmlcov/
+
+# Local credentials and editor/browser state
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.chrome-preview-profile/
+.pbi/
+Thumbs.db
+.DS_Store
+~$*
+
+# Customer-level data and fitted artifacts stay local
+data/*
+!data/README.md
 models/*
 !models/README.md
 *.joblib
 *.pkl
-*.env
-.env.*
-!.env.example
-pip-wheel-metadata/
-*.egg-info/
+*.npz
+*.ubj
+*.zip
+
+# Generated predictions and local verification runs
+outputs/
+build/
+dist/
 catboost_info/
-.pytest_cache/
-.pbi/
+*.log

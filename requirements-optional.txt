@@ -1,3 +1,0 @@
-# Optional large-data component from the PDF.
-# JDK 17 is also required for local Spark jobs.
-pyspark==3.5.7
