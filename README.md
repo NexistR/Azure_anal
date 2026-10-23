@@ -79,9 +79,3 @@ python -m unittest discover -s tests -v
 - [聚合结果索引](reports/results/README.md)
 - [工程整理与验证报告](reports/cleanup/README.md)
 - [数据来源与研究边界](data/README.md)
-
-## 上传 GitHub
-
-本机整理目录已初始化独立 Git 仓库，不包含原项目 Git 历史，尚未提交或连接远程仓库。ZIP 解压目录需先执行 `git init -b main`。上传前执行 `git status --short --ignored` 检查列表；`data/`、拟合模型、运行输出、环境和缓存已忽略。然后提交代码、设置自己的远程地址并推送，无需复制原目录的 `.git`。
-
-公开发布 ZIP 只包含可跟踪文件，不含 `.git` 和本地模型。模型恢复脚本不下载第三方文件；没有原模型工件时，仓库仍可执行合成接口测试和概率分层示例。未替原作者指定新的开源许可证；第三方数据和软件遵循各自许可。
